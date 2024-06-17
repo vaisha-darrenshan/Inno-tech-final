@@ -1,10 +1,15 @@
 <!DOCTYPE html><html lang="en" style="--scrollbar-width: 0px;"><head>
   <meta charset="utf-8">
-  <title>Inno Tech Council</title>
+  <title>Inno-Tech Council</title>
   <link rel="preload" as="font" href="css/webfonts/38F6FD_0_0.woff2">
   <link rel="preload" as="font" href="css/webfonts/38F6FD_1_0.woff2">
   <link rel="preload" as="font" href="css/webfonts/CerebriSans-SemiBold.woff2">
-  <link rel="“canonical”" href="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,9 +27,9 @@
   <link rel="stylesheet" href="css/new.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="images/school_logo2.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/school_logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/school_logo.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/inno2.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/inno2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/inno2.png">
   <link rel="manifest" href="site.webmanifest">
 
   <meta name="description" >
@@ -50,987 +55,471 @@
 </head>
 <body>
   
-  <header>
+  
+  <header >
     <nav>
-      <p class="logo bold"><img src="images/school_logo.png" alt="School_logo" class="logo-img"></p>
-      <ul>
-        <li><a class="demo-button" style="cursor: pointer;">AI Policy</a></li>
-        <li><a href="/About">About</a></li>
-        <li class="buy-button">Home</li>
+      <p class="logo bold"><img src="images/school_logo.png" alt="School_logo" class="logo-img" style="width: 200px;"></p>
+      <ul class="sidebar" style="display: none;">
+        <li onclick="hideSidebar()"><a href="#"><i style="margin-left: -300px;" class="lni lni-close"></i></a></li>
+            <li class="li"><a href="#research">Research material</a></li>
+            <li class="li" ><a href="#ai_policy_sub1">AI Policy</a></li>
+            <li class="li" ><a href="#ai_policy_sub2">Mobile Policy</a></li>
+            <li class="li" ><a href="#ai_policy_sub3">School policy</a></li>
+          </div>
+        </li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li style="width: 200px; margin-left: 90px;" class="buy-button"><a href="#">Home</a></li>
+      </ul>
+      <ul class="normal-navbar">
+        <li style="margin-right: 20px;" class="hideOnMobile"><a class="demo-button" href="#research">Research material</a></li>
+        <li style="margin-right: 20px;" class="hideOnMobile dropdown">
+          <a class="demo-button" style="margin-right: -20px;" href="#aiPolicy">Policies</a>
+          <div class="dropdown-content">
+            <a href="#ai_policy_sub1">AI Policy</a>
+            <a href="#ai_policy_sub2">Mobile Policy</a>
+            <a href="#ai_policy_sub3">School policy</a>
+          </div>
+          
+
+        </li>
+        <i style="margin-top: 5px; margin-right: 20px;" class="lni lni-chevron-down"></i>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="buy-button"><a href="#">Home</a></li>
+        <li style="margin-left: 10px;" class="menu-button" onclick="showSidebar()"><a href="#"><i class="lni lni-menu"></i></a></li>
       </ul>
     </nav>
   </header>
-  
+  <script>
+    function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const normalNavbar = document.querySelector('.normal-navbar');
+            sidebar.style.display = 'block';
+            normalNavbar.style.display = 'none';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const normalNavbar = document.querySelector('.normal-navbar');
+            sidebar.style.display = 'none';
+            normalNavbar.style.display = 'flex';
+        }
+  </script>
   <div class="blurry-header-helper"></div>
   <div class="stars-bg">
+    <section class="shooting_stars">
+      <span></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            
+      
+  </section>
   </div>
   <div class="limited-width">
     <span class="small-star" data-animation="" style="left: 0px; transform: rotate(-20deg) translate(101px, 165px); --playState: running;"></span>
     <span class="small-star" data-animation="" style="right: 0px; transform: scale(0.8) rotate(20deg) translate(-91px, 200px); --playState: running;"></span>
     <div class="hero">
-      <h1 class="two-lines">Innovation-Technology<span class="small-star" data-animation="" style="transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
-      <p>
+      <h1  data-aos="fade-up" class="two-lines">Innovation-Technology<span class="small-star" data-animation="" style="transform: rotate(-20deg) translate(-11px, 1px); --playState: running;"></span></h1>
+      <p data-aos="zoom-in-up">
         Council of OIS
       </p>
       <div class="hero-buttons">
         <a class="demo-button hero-button"><i class="fas fa-eye"></i>Know More</a>
       </div>
       
-        <div class="promo-img" >
-          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/945334183?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius: 1%;" title="SampleVideo_1280x720_1mb"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <div class="promo-img">
+        <img style="border-radius: 10px;" src="/images/promo(1).png">
+        <div class="play-button" onclick="playVideo()">
+          <i class="fas fa-play" style="color: #ffffff;"></i>
         </div>
+    </div>
+    
+    <script>
+    
+    function playVideo() {
+    var promoImg = document.querySelector('.promo-img');
+    var playButton = promoImg.querySelector('.play-button');
+
+    var videoSrc = '/media/video.mp4';
+    var videoElement = document.createElement('video');
+    videoElement.setAttribute('src', videoSrc);
+    videoElement.setAttribute('controls', true);
+    videoElement.style.width = promoImg.offsetWidth + 'px';
+    videoElement.style.height = promoImg.offsetHeight + 'px';
+    videoElement.style.borderRadius = '1%';
+
+    promoImg.replaceChild(videoElement, promoImg.querySelector('img'));
+    promoImg.removeChild(playButton);
+
+    videoElement.play();
+
+    videoElement.addEventListener("ended", function() {
+      var imgElement = document.createElement('img');
+        imgElement.setAttribute('src', '/images/promo(1).png');
+        imgElement.setAttribute('alt', 'Promo Image');
+        imgElement.style.width = promoImg.offsetWidth + 'px';
+        imgElement.style.height = promoImg.offsetHeight + 'px';
+        promoImg.replaceChild(imgElement, videoElement);
+        promoImg.appendChild(playButton);
+        playButton.innerHTML = '<i class="fas fa-redo" style="color: #ffffff;"></i>';
+
+    });
+}
+
+    </script>
+    
+    
       
     </div>
   </div>
-  <section class="become-a-css-pro explainer" id="features">
-    <div class="sub-explainer"></div>
+  
+   <section class="become-a-css-pro explainer"  >
+   
     <div class="limited-width">
-      <h2>Motto</h2>
+      <h1  style=" font-size: 4em;"  data-aos="zoom-out-down" >Motto</h1>
       <p class="big-p">
         <div class="div">
         <span class="cta-wrapper">
-          <h6 class="button-cta">Pioneer Progress, Ignite Change</h6>
+          <h6 class="button-cta" data-aos="zoom-in-up" >Pioneer Progress, Ignite Change</h6>
         </span>
       </div>
       </p>
     </div>
-        <p class="video-desc small-p">
+        <p class="video-desc small-p"  id="about">
           
         </p>
       
-      <div class="sub-explainer">
-        <p class="span-less-opacity">
-           <i class="fas fa-arrow-pointer"></i> <strong>Get to the right design faster</strong><span>. Live edit design properties visually and get first-class generated CSS code for you.</span>
+<section>
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title mb-4 big-text" style="color: #3498db;">About Us</h2>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <p class="section-description text-light big-text">
+            Welcome to the Innovation Technology Council at OIS. We're dedicated to igniting a passion for technology among students and driving innovation in education.
         </p>
-        <p class="span-less-opacity">
-           <i class="fas fa-puzzle-piece"></i> <strong>Universal visual CSS editor</strong><span>. CSS Pro runs on the browser as an extension. Edit any website, anytime.</span>
-        </p>
-      </div>
-      <div class="sub-explainer">
-        <p class="span-less-opacity">
-           <strong>       </strong><span>    </span>
-       </p>
-        <div class="col-md-4 text-center">
-          <img src="images/bulb.png" alt="Bulb Image" class="img-fluid mt-md-4 mb-3">
-        </div>
+        <a href="mainabout.html" class="btn btn-primary btn-sm" target="_blank">Learn More</a>
+    </div>
+</div>
 
-          <p class="span-less-opacity">
-             <strong>             </strong><span>    </span>
-         </p>
-        </div>
+    <div  class="row align-items-center"> 
+      
+      <div class="col-md-4 text-md-right">
+        <h3 class="subsection-title mt-6 mb-3 big-text" style="color: #3498db;">Our Mission</h3>
+        <ul class="list-unstyled mission-list big-text" style="color: #fdfefe;">
+          <li>Promoting Technological Literacy</li>
+          <li>Fostering Innovation</li>
+          <li>Embracing Emerging Technologies</li>
+          
+        </ul>
         
       </div>
-      <div class="sub-explainer">
-        
-        <p class="span-less-opacity">
-           <i class="fas fa-arrow-pointer"></i> <strong>Get to the right design faster</strong><span>. Live edit design properties visually and get first-class generated CSS code for you.</span>
-        </p>
-        
-        <p class="span-less-opacity">
-           <i class="fas fa-puzzle-piece"></i> <strong>Universal visual CSS editor</strong><span>. CSS Pro runs on the browser as an extension. Edit any website, anytime.</span>
-        </p>
+
+    
+      <!-- Image Column -->
+      <div class="col-md-4 text-center d-none d-md-block" id="bulb">
+        <img src="images/bulbon.png" alt="Bulb Image" class="img-fluid mt-md-4 mb-3" id="bulb-img">
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+      <script>
+        var controller = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({
+          triggerElement: '#bulb', 
+          triggerHook: 1 
+        })
+        .on('enter', function () {
+          document.getElementById('bulb-img').src = 'images/bulboff.png'; 
+        })
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+          triggerElement: '#bulb', 
+          triggerHook: 0.4 
+        })
+        .on('enter', function () {
+          document.getElementById('bulb-img').src = 'images/bulbon.png'; // change the bulb to the on image
+        })
+        .addTo(controller);
+      </script>
+      <!-- What We Do Column -->
+      <div class="col-md-4 text-md-left">
+        <h3 class="subsection-title mt-4 mb-3 big-text" style="color: #3498db;">What We Do</h3>
+        <ul class="list-unstyled what-we-do-list big-text" style="color: #fdfefe;">
+          <li>• Tech Workshops and Seminars</li>
+          <li>• Innovation Challenges</li>
+          <li>• Steam Outreach Programs</li>
+          <li>• Partnerships and Collaborations</li>
+        </ul>
+        <a href="subpage.html" class="btn btn-primary btn-sm" target="_blank" >
+          Learn More
+      </a>
+      </div>
+    </div>
+    
+  
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-6 text-center">
+        <h3 class="subsection-title mt-4 mb-3 big-text" style="color: #3498db;">Get Involved</h3>
+        <ul class="list-unstyled get-involved-list big-text" style="color: #FDFEFE;">
+          <li>• Student Membership</li>
+          <li>• Volunteer Opportunities</li>
+          <li>• Sponsorship and Support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-explainer"></div>
+
+    <h1 class="text-center mt-5" data-aos="zoom-out-down">Testimonials</h1>
+    <figure data-aos="flip-down" class="snip1533" >
+      <figcaption >
+        <blockquote>
+          <p>If you do the job badly enough, sometimes you don't get asked to do it again.</p>
+        </blockquote>
+        <h3>Wisteria Ravenclaw</h3>
+        <h4>Google Inc.</h4>
+      </figcaption>
+    </figure>
+    <figure data-aos="flip-down" class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+        </blockquote>
+        <h3>Ursula Gurnmeister</h3>
+        <h4>Facebook</h4>
+      </figcaption>
+    </figure>
+    <figure data-aos="flip-down" class="snip1533">
+      <figcaption>
+        <blockquote>
+          <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+        </blockquote>
+        <h3>Ingredia Nutrisha</h3>
+        <h4>Twitter</h4>
+      </figcaption>
+    </figure>
+    <div id="ai_policy_sub1" class="sub-explainer" style="margin-top: 250px;"></div>
+   
+    <div class="container">
+      <h1  class="text-center" data-aos="zoom-out-down">AI policy</h1>
+    
+      <div class="policy-content" data-aos="fade-up">
+        <div class="policy-section">
+          <h2 class="section-title"><span style="color: #007bff;">Overview</span></h2>
+          <p><strong>This policy outlines the guidelines for using artificial intelligence (AI) in our school, Gems Our Own Indian School.</strong> Our school recognises technology's benefits; to maintain academic integrity, we must comply with plagiarism and exam malpractice guidelines. Additionally, pupil well-being and safe internet use are at the forefront of our considerations. We are also committed to developing our pupils' IT skills and curiosity about the world.</p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Use of AI for Academic Purposes</span></h3>
+          <p><strong>AI can be used as an aid for academic purposes, such as research, homework, and assignments.</strong> However, it is essential to note that students should not solely rely on AI to complete their work. AI must align with academic integrity guidelines, and students must cite the sources used. Teachers and staff should monitor the use of AI and provide guidance where necessary.</p>
+          <p><strong>AI chatbots should only be used as supplementary educational tools for enhancing learning and understanding, not as a replacement for independent thought or original work.</strong> Students should refer to the course syllabus for specific guidelines on using generative tools in a particular course. Students should seek guidance from their teachers to ensure ethical and responsible use of AI tools in their academic work. Students must acknowledge and provide proper citations for any AI-generated content used in their assignments or projects.</p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Plagiarism and Copyright Infringement</span></h3>
+          <p><strong>The use of AI must not result in plagiarism or copyright infringement.</strong> Students must understand the concept of plagiarism and be able to use AI ethically. Teachers and staff must educate students on using AI without violating plagiarism guidelines and copyright laws.</p>
+          <p><strong>Students are expected to use AI ethically. This means that AI should not be harmful, discriminatory, or misleading. Students should not use AI to spread false information or engage in plagiarism, cheating, or unauthorized assistance on assessments or assignments.</strong></p>
+        </div>
+      
+        <div class="policy-section">
+          <h3 class="subsection-title"><span style="color: #007bff;">Prohibition of AI During Exams</span></h3>
+          <p><strong>AI must not be used during exams, as this constitutes exam malpractice.</strong> Students must refrain from using AI to answer exam questions or seek assistance during the exam. Teachers and staff should ensure that students are aware of this policy and the consequences of violating it.</p>
+        </div>
+      
+        <div class="policy-section">
+          <p><strong>Our school recognises the benefits of using AI in education and is committed to providing our students with a safe and supportive learning environment.</strong> The guidelines outlined in this policy are in place to ensure academic integrity, safeguard students, and maintain ethical standards. Violations of this policy may result in academic penalties or disciplinary actions. By promoting responsible AI use, we aim to equip our students with the necessary skills and values to navigate the evolving technological landscape ethically and responsibly.</p>
+        </div>
+      </div>
+
       </div>
       
-      <div class="sub-explainer"></div>
+      
+      
+    
+    
       <div>
-        <div class="rainbow">
-          <div class="moving-rainbow"></div>
-          <div class="border-overlay"></div>
-          <div class="content">
-              Your Content Here
-          </div>
-      </div>
-    </div>
-        <div class="card">
-          <div class="card-illustration code-editor">
-            <img src="images/code_editor.jpg" alt="Code Editor">
-          </div>
-          <div class="card-text">
-            <p class="card-title">
-              Code or No-code, it's all good
-              <!-- Automatically generated CSS code !-->
-            </p>
-            <p class="card-desc">
-              <!-- You can !-->Switch to the Code editor anytime to fine-tune your code and get things right quickly. It has autocomplete, checkboxes to toggle declarations, and color pickers that make changing colors a breeze.
-              <!--
-                After making your changes visually, you can switch to the Code Editor to see the generated CSS code. It also comes with color pickers that make changing colors a breeze.
-              !-->
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!--<div class="cards-row with-cards-taking-half less-padding-on-cards">
-        <div class="card horizontal">
-          <div class="card-illustration box-shadow-presets">
-            <div class="box">90+</div>
-          </div>
-          <div class="card-text">
-            <p class="card-big-desc">Add an extra touch to your designs with our collection of 90+ beautiful box-shadow presets - you only have to click.</p>
-          </div>
-        </div>
-      </div>
-    </div>!-->
-  </div></section>
-  <section class="explainer next-level-backgrounds zero-margin-bottom">
-    <div class="limited-width">
-      <div class="cool-circle"></div>
-      <h2>Create next-level backgrounds</h2>
-      <p class="big-p">
-        Creating gradients was never this easy.
-        <br class="hide-on-under-375">
-        Simple to use, yet incredibly versatile.
-        <!-- <br class="hide-on-under-375">
-        Create the unforgettable ones. !-->
-      </p>
-      <div class="big-video without-mask">
-        <video class="animated-background-loading lazy" loop="" muted="true" playsinline="" autoplay="">
-          <source data-src="img/background_demo_shorter_compressed.mp4" type="video/mp4">
-        </video>
-      </div>
-      <p class="big-p even-bigger">
-        <i class="fas fa-trophy" style="margin-bottom: 1em;"></i><span class="small-star" data-animation="" style="transform: rotate(-20deg) translate(-10px, -13px) scale(1.1); --playState: paused;"></span>
-        <br><strong>The most complete background editor for the web.</strong>
-
-        <!-- Easily create things you've never seen before on the internet. !-->
-        <br><br class="hide-on-tablet-and-up">You'll be amazed at what you can create.
-        <span class="button-cta-wrapper">
-          <button class="button-cta demo-button"><i class="fas fa-paint-roller margin-right"></i> Try it on this page</button>
-        </span>
-      </p>
-      <div class="cards-row with-cards-taking-half">
-        <div class="card">
-          <div class="card-illustration infinite-layers">
-            <div>
-  <div>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-add-background-layer" data-style="full">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-add-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-plus margin-right-8px"></i> Add background layer</span>
-      </button></div>
-    </label>
-  </div>
-
-  <div>
-    <label data-css-demo-pro-background-input="" data-css-demo-pro-edit-rule="background">
-    <i class="fas fa-bars fa-bars"></i>
-    <span class="css-demo-pro-visual-editor-color css-demo-pro-visual-editor-color-open-dropdown" data-background-type="linear-gradient" data-was-never-opened="" data-unformatted-background="linear-gradient(236deg, #BAFF99 0%, #005E64 100%)" data-angle="236" data-background-blend-mode="overlay" style="background: linear-gradient(236deg, rgb(186, 255, 153) 0%, rgb(0, 94, 100) 100%);"></span>
-    <input spellcheck="false" value="Linear gradient" type="text" disabled="">
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-toggle-background-layer" data-tippy-content="Toggle layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-toggle-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-eye"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-duplicate-background-layer" data-tippy-content="Duplicate layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-duplicate-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-clone"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-remove-background-layer" data-tippy-content="Remove layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-remove-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-minus"></i></span>
-      </button></div>
-    </label>
-  </label><label data-css-demo-pro-background-input="" data-css-demo-pro-edit-rule="background">
-    <i class="fas fa-bars fa-bars"></i>
-    <span class="css-demo-pro-visual-editor-color css-demo-pro-visual-editor-color-open-dropdown" data-background-type="linear-gradient" data-was-never-opened="" data-unformatted-background="linear-gradient(180deg, #FFFFFF 0%, #002A5A 100%)" data-angle="180" data-background-blend-mode="overlay" style="background: linear-gradient(rgb(255, 255, 255) 0%, rgb(0, 42, 90) 100%);"></span>
-    <input spellcheck="false" value="Linear gradient" type="text" disabled="">
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-toggle-background-layer" data-tippy-content="Toggle layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-toggle-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-eye"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-duplicate-background-layer" data-tippy-content="Duplicate layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-duplicate-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-clone"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-remove-background-layer" data-tippy-content="Remove layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-remove-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-minus"></i></span>
-      </button></div>
-    </label>
-  </label><label data-css-demo-pro-background-input="" data-css-demo-pro-edit-rule="background">
-    <i class="fas fa-bars fa-bars"></i>
-    <span class="css-demo-pro-visual-editor-color css-demo-pro-visual-editor-color-open-dropdown" data-background-type="linear-gradient" data-was-never-opened="" data-unformatted-background="linear-gradient(225deg, #0094FF 20%, #BFF4ED 45%, #280F34 45%, #280F34 70%, #FF004E 70%, #E41655 85%, #B30753 85%, #B30753 100%)" data-angle="225" data-background-blend-mode="darken" style="background: linear-gradient(225deg, rgb(0, 148, 255) 20%, rgb(191, 244, 237) 45%, rgb(40, 15, 52) 45%, rgb(40, 15, 52) 70%, rgb(255, 0, 78) 70%, rgb(228, 22, 85) 85%, rgb(179, 7, 83) 85%, rgb(179, 7, 83) 100%);"></span>
-    <input spellcheck="false" value="Linear gradient" type="text" disabled="">
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-toggle-background-layer" data-tippy-content="Toggle layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-toggle-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-eye"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-duplicate-background-layer" data-tippy-content="Duplicate layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-duplicate-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-clone"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-remove-background-layer" data-tippy-content="Remove layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-remove-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-minus"></i></span>
-      </button></div>
-    </label>
-  </label><label data-css-demo-pro-background-input="" data-css-demo-pro-edit-rule="background">
-    <i class="fas fa-bars fa-bars"></i>
-    <span class="css-demo-pro-visual-editor-color css-demo-pro-visual-editor-color-open-dropdown" data-background-type="linear-gradient" data-was-never-opened="" data-unformatted-background="linear-gradient(135deg, #0E0220 15%, #0E0220 35%, #E40475 35%, #E40475 60%, #48E0E4 60%, #48E0E4 68%, #D7FBF6 68%, #D7FBF6 100%)" data-angle="135" data-background-blend-mode="normal" style="background: linear-gradient(135deg, rgb(14, 2, 32) 15%, rgb(14, 2, 32) 35%, rgb(228, 4, 117) 35%, rgb(228, 4, 117) 60%, rgb(72, 224, 228) 60%, rgb(72, 224, 228) 68%, rgb(215, 251, 246) 68%, rgb(215, 251, 246) 100%);"></span>
-    <input spellcheck="false" value="Linear gradient" type="text" disabled="">
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-toggle-background-layer" data-tippy-content="Toggle layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-toggle-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-eye"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-duplicate-background-layer" data-tippy-content="Duplicate layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-duplicate-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-clone"></i></span>
-      </button></div>
-    </label>
-    <label data-css-demo-pro-visual-button="" data-css-demo-pro-edit-rule="custom-remove-background-layer" data-tippy-content="Remove layer">
-      <div>
-        <button type="button" value="none" name="css-demo-pro-remove-background-layer">
-        <span class="css-demo-pro-visual-button-span"><i class="fas fa-minus"></i></span>
-      </button></div>
-    </label>
-  </label>
-  </div>
-</div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">Infinite layers</p>
-            <p class="card-desc">Easily create complex backgrounds with our <strong>best-in-class background editor</strong> that supports multiple layers. Hide, re-order, duplicate, blend, or delete layers with ease.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-illustration patterns-example">
-            <div class="pattern-grid-background"></div>
-            <div id="pattern-example-1" style="justify-self: end;"></div>
-            <div id="pattern-example-2" style="justify-self: start;"></div>
-            <div id="pattern-example-3" style="justify-self: end;"></div>
-            <div id="pattern-example-4" style="justify-self: start;"></div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">Patterns</p>
-            <p class="card-desc">80+ charming, pure CSS background patterns easily accessible in a click on the Visual Editor. Make your work memorable and unique.</p>
-          </div>
-        </div>
-      </div>
-      <div class="cards-row with-cards-taking-half">
-        <div class="card" style="position: relative;">
-          <div class="card-illustration direct-control">
-            <div class="css-demo-pro-gradient-controls-overlay">
-            <div class="css-demo-pro-gradient-controls-track">
-              <span class="css-demo-pro-gradient-controls-track-item selected" data-real-left-percentage="0.9%" style="left: 0.9%;">
-                <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#B6D0F7" style="background-color: rgb(182, 208, 247);"></span>
-              </span>
-              <span class="css-demo-pro-gradient-controls-track-item" style="left: 21.12%;" data-real-left-percentage="21.12%">
-                <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#EEF4E1" style="background-color: rgb(238, 244, 225);"></span>
-              </span>
-              <span class="css-demo-pro-gradient-controls-track-item" data-real-left-percentage="39.05%" style="left: 39.05%;">
-                    <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#E2C1F9" style="background-color: rgb(226, 193, 249);"></span>
-                  </span><span class="css-demo-pro-gradient-controls-track-item" data-real-left-percentage="52.2%" style="left: 52.2%;">
-                    <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#BFD1F9" style="background-color: rgb(191, 209, 249);"></span>
-                  </span><span class="css-demo-pro-gradient-controls-track-item" data-real-left-percentage="62.83%" style="left: 62.83%;">
-                    <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#FAFCFE" style="background-color: rgb(250, 252, 254);"></span>
-                  </span><span class="css-demo-pro-gradient-controls-track-item" data-real-left-percentage="71.67%" style="left: 71.67%;">
-                    <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#BAE4E2" style="background-color: rgb(186, 228, 226);"></span>
-                  </span><span class="css-demo-pro-gradient-controls-track-item" data-real-left-percentage="89.14%" style="left: 89.14%;">
-                    <span class="css-demo-pro-gradient-controls-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-controls-pickr" data-unformatted-color="#8C6BE3" style="background-color: rgb(140, 107, 227);"></span>
-                  </span><span class="css-demo-pro-gradient-controls-track-line"></span>
-              <span class="css-demo-pro-gradient-controls-resize-circle" data-side="left" style="left: 5px;"></span>
-              <span class="css-demo-pro-gradient-controls-resize-circle" data-side="right" style="right: -13px;"></span>
+        <div style="display: flex; gap: 20px; margin-left: 100px;">
+          <div class="card">
+            <div class="cover-photo">
+                <img src="images/Vathsal.jpg" class="profile">
             </div>
-          </div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">What you see is what you get</p>
-            <p class="card-desc">
-              Editing gradients with CSS Pro is fun, fast, and easy, not a nightmare.
-              Drag and adjust color stops directly over the element and easily create stunning gradients.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-illustration gradients-example">
-            <div class="gradient-example" id="linear-example"></div>
-            <div class="gradient-example" id="radial-example"></div>
-            <div class="gradient-example" id="conic-example"></div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">Linear, radial, and conic gradients</p>
-            <p class="card-desc">
-              Create all kinds of gradients available in CSS. Drag and drop color stops, resize, rotate, and make gradients repeatable. Effortlessly create newness.<!--<br><br>All of this faster than anyone else.!--></p>
-          </div>
-        </div>
-      </div>
-      <div class="cards-row with-cards-taking-half">
-        <div class="card">
-          <div class="card-illustration images-and-noise">
-            <div class="image-example">
-              <img src="img/landscape.jpg" alt="Landscape" class="for-blur">
-              <img src="img/landscape.jpg" alt="Landscape">
-              <div class="top left square"></div>
-              <div class="top right square"></div>
-              <div class="bottom left square"></div>
-              <div class="bottom right square"></div>
+            <h3 class="profile-name">Vathsal Koyi</h3><br><p style="margin-right: 75px;">President</p>
+            <nobr>
+            <p class="about">Message</p>
+          </nobr>
+            <button class="btn"><a href="" >Following</a></button>
+            <div class="icons">
+                <i class="lni lni-linkedin-original"></i>
+                <i class="lni lni-github-original"></i>
+                <i class="lni lni-youtube"></i>
+                <i class="lni lni-twitter-original"></i>
             </div>
-            <div class="noise-example">
-              <img src="img/noises/noise2.png">
-            </div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">Images and Noise</p>
-            <p class="card-desc">Easily add images to your background and have precise visual drag control over their position and size without coding or guessing values. Add textures with our collection of crisp, ready-to-use noise.</p>
-          </div>
         </div>
-        <div class="card">
-          <div class="card-illustration ease-gradients-demo">
-            <div class="flex">
-              <div>
-                <div class="ease-gradients-demo-gradient-1"></div>
-                <div class="css-demo-pro-gradient-track" data-css-demo-pro-gradient-input="" data-edit-id="0">
-                  <span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="49.3%" style="left: 49.3%;">
-                    <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#FFFFFF" style="background: #FFFFFF"></span>
-                  </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="100%" style="left: 100%;">
-                    <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                    <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#000000" style="background: #000000"></span>
-                  </span><div class="css-demo-pro-gradient-visualizer" style="background-image: linear-gradient(90deg, rgb(255, 255, 255) 49.3%, rgb(0, 0, 0) 100%);">
-                  </div>
-                </div>
+          <div class="card">
+              <div class="cover-photo">
+                  <img src="images/Minha.jpg" class="profile">
               </div>
-              <i class="fas fa-arrow-right"></i>
-              <div>
-                <div class="ease-gradients-demo-gradient-2"></div>
-                <div class="css-demo-pro-gradient-track" data-css-demo-pro-gradient-input="" data-edit-id="0">
-                <span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="49.3%" style="left: 49.3%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#FFFFFF" style="background: #FFFFFF"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="55.32%" style="left: 55.32%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#FBFBFB" style="background: #FBFBFB"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="60.71%" style="left: 60.71%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#F1F1F1" style="background: #F1F1F1"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="65.62%" style="left: 65.62%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#E2E2E2" style="background: #E2E2E2"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="70.21%" style="left: 70.21%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#CDCDCD" style="background: #CDCDCD"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="74.65%" style="left: 74.65%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#B4B4B4" style="background: #B4B4B4"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="79.09%" style="left: 79.09%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#979797" style="background: #979797"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="83.68%" style="left: 83.68%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#777777" style="background: #777777"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="88.59%" style="left: 88.59%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#525252" style="background: #525252"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="93.98%" style="left: 93.98%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#2B2B2B" style="background: #2B2B2B"></span>
-                      </span><span class="css-demo-pro-gradient-visualizer-slider-item" data-real-left-percentage="100%" style="left: 100%;">
-                        <span class="css-demo-pro-gradient-visualizer-pickr-background"></span>
-                        <span class="css-demo-pro-gradient-visualizer-pickr" data-unformatted-color="#000000" style="background: #000000"></span>
-                      </span><div class="css-demo-pro-gradient-visualizer" style="background-image: linear-gradient(90deg, rgb(255, 255, 255) 49.3%, rgb(251, 251, 251) 55.32%, rgb(241, 241, 241) 60.71%, rgb(226, 226, 226) 65.62%, rgb(205, 205, 205) 70.21%, rgb(180, 180, 180) 74.65%, rgb(151, 151, 151) 79.09%, rgb(119, 119, 119) 83.68%, rgb(82, 82, 82) 88.59%, rgb(43, 43, 43) 93.98%, rgb(0, 0, 0) 100%);">
-                  </div>
-                </div>
+              <h3 class="profile-name">Minha Koloth </h3><br><p style="margin-right: 50px;">President</p>
+              <nobr>
+              <p class="about">Message</p>
+            </nobr>
+              <button class="btn"><a href="" >Following</a></button>
+              <div class="icons">
+                <i class="lni lni-linkedin-original"></i>
+                <i class="lni lni-github-original"></i>
+                <i class="lni lni-youtube"></i>
+                <i class="lni lni-twitter-original"></i>
               </div>
-            </div>
           </div>
-          <div class="card-text">
-            <p class="card-title">Smooth like butter gradients</p>
-            <p class="card-desc">CSS gradients can be harsh. With CSS Pro, you can make them smooth by clicking on a <i class="fas fa-magic-wand-sparkles"></i> button*, saving tons of time. A secret weapon.<small>*: currently only available for gradients of two color stops</small></p>
-          </div>
-        </div>
-      </div>!-->
-      <div class="cards-row with-cards-taking-half">
-        <div class="card horizontal">
-          <div class="card-illustration presets" style="flex: 1;">
-            <img src="images/presets2.png" alt="Background presets collection" loading="lazy">
-          </div>
-          <div class="card-text" style="flex: 2;">
-            <p class="card-title">Ready-to-use backgrounds presets</p>
-            <p class="card-desc">We've searched the internet for the most beautiful gradients we could find<!-- so that you don't have to!-->. Over 300+ high-quality backgrounds to choose from, only a click away.</p>
-          </div>
-        </div>
+          
       </div>
-    </div>
-  </section>
-  <section class="explainer changes zero-margin-top">
-    <div class="limited-width">
-      <h2>
-        <!-- Share or copy your changes !-->
-        Finally. Never lose your changes anymore.
-      </h2>
-      <p class="big-p">
-        <span class="semibold">Easily share via link, copy or export all the improvements.</span> CSS Pro keeps track of all changes you make on the CSS.
-      </p>
-      <div class="changes-images-wrapper">
-        <div class="changes-main-image-wrapper">
-          <div class="changes-image-gradient"></div>
-          <img src="images/changes_cropped.jpg" class="changes-main-image">
-        </div>
-        <div class="changes-demo browser">
-          <div class="browser-top">
-            <div class="browser-buttons">
-              <div class="browser-close"></div>
-              <div class="browser-minimize"></div>
-              <div class="browser-maximize"></div>
-            </div>
-            <div class="browser-address animated-background-loading"><i class="fas fa-lock browser-lock"></i>edits.csspro.com/e/toastlog-com-519smxcz</div>
-            <img src="images/logo2-min.png" alt="CSS Pro logo" class="browser-extension">
+      <div style="display: flex; gap: 20px; margin-left: 100px;">
+        <div class="card">
+          <div class="cover-photo">
+              <img src="images/dhruv_suru.jpg" class="profile">
           </div>
-          <img src="images/cursor.svg" alt="Cursor" class="cursor">
-          <img src="images/changes_demo_cropped.jpg" class="changes-demo-image before">
-          <img src="images/changes_demo_after_cropped.jpg" class="changes-demo-image after">
-        </div>
-      </div>
-      <div class="sub-explainer with-margin-top zero-margin-bottom">
-        <p class="span-less-opacity">
-           <i class="fas fa-link"></i> <strong>Get a link with all the changes</strong><span>. Share your improvements in a link that anyone can access to see the edited website with your CSS changes.</span>
-        </p>
-        <p class="span-less-opacity">
-           <i class="fas fa-magic-wand-sparkles"></i> <strong>With a Before / After button</strong><span>. Easier for your team to check what you've changed and compare. Developers can also easily copy the changed CSS code.</span>
-        </p>
-      </div>
-      <!--<div class="card-illustration share-url">
-        <div class="pattern-grid-background"></div>
-        <div>
-          <div class="button-example" style="transform: translateY(15px);">Button</div>
-          <i class="fas fa-arrow-right" style="transform: translateY(0px) rotate(335deg);"></i>
-          <div class="button-example after" style="transform: translateY(-15px);">Button</div>
-        </div>
-        <div>
-          <span class="changes-example"><i class="fas fa-magic-wand-sparkles margin-right"></i> 3 CSS Changes</span>
-          <div class="url-example" data-animation><i class="fas fa-link margin-right"></i>edits.csspro.com/...</div>
-        </div>
-      </div>!-->
-    </div>
-  </section>
-  <section class="explainer">
-    <h2>
-      Built to work on any website
-    </h2>
-    <p class="big-p">
-      CSS Pro works on all kinds of websites: WordPress, Shopify, React, Wix, all themes, anything. It works even if the website is not yours. No code change is required, and it works offline.
-    </p>
-    <ul class="supported-browsers" data-animation="" style="--playState: paused;">
-      <img src="images/logo2-min.png" class="the-logo">
-      <img src="images/logo2-min.png" class="the-logo">
-      <li>
-        <img src="images/chrome2.png" loading="lazy" alt="Chrome logo" style="position: absolute; filter: blur(20px); z-index: -1; transform: scale(1) translate3d(0, 0, 0);">
-        <img src="images/chrome2.png" loading="lazy" alt="Chrome logo">
-      </li>
-      <div class="division"></div>
-      <li>
-        <img src="images/safari2.png" loading="lazy" alt="Safari logo" style="position: absolute; filter: blur(20px); z-index: -1; height: calc(var(--logo-height) + 3px); transform: translateY(calc(var(--logo-height) * 0.05)) scale(1) translate3d(0, 0, 0);">
-        <img src="images/safari2.png" loading="lazy" alt="Safari logo" style="height: calc(var(--logo-height) + 3px); transform: translateY(3px) translate3d(0, 0, 0);">
-      </li>
-      <div class="division"></div>
-      <li>
-        <img src="images/firefox2.png" loading="lazy" alt="Firefox logo" style="position: absolute; filter: blur(20px); z-index: -1; height: calc(var(--logo-height) + 3px); transform: scale(1) translate3d(0, 0, 0);">
-        <img src="images/firefox2.png" loading="lazy" alt="Firefox logo" style="height: calc(var(--logo-height) + 3px);">
-      </li>
-      <div class="division"></div>
-    </ul>
-  </section>
-  <section class="explainer zero-margin-bottom">
-    <h2>
-      Making Inspect Element simple
-    </h2>
-    <p class="big-p">
-      No more clunky Devtools.<br>Point to any element and get its CSS code, instantly.
-    </p>
-  </section>
-
-  <div class="scan-magic" style="--card-height: 86px;">
-    <div class="crazy-gradient-wrapper">
-      <div class="crazy-gradient"></div>
-      <div class="crazy-gradient"></div>
-    </div>
-    <div class="card small main">
-      <div class="card-illustration">
-        <div class="halo"></div>
-        <div class="app-icon blur-glow center-bottom" style="z-index: 1; opacity: 0.8;">
-          <i class="fas fa-wand-magic-sparkles"></i>
-        </div>
-        <div class="app-icon center-bottom">
-          <i class="fas fa-wand-magic-sparkles"></i>
-        </div>
-        <div class="hover-helper pulse" data-animation="" style="--playState: paused;"><i class="fas fa-arrow-pointer margin-right"></i>Hover me</div>
-      </div>
-      <div class="card-text">
-        <p class="card-title">Understand how the best websites are built</p>
-        <p class="card-desc">Check how your favorite websites are doing their CSS and learn from the best. Discover what box-shadow, gradient, filter or effect they're using.</p>
-      </div>
-    </div>
-    <div class="card small mask-div for-blur">
-    </div>
-    <div class="card small mask-div">
-      <div class="css-demo-pro-dom-tree css-demo-pro-pinned-box" style="display: flex !important; left: 0px;" contenteditable="false">
-
-        <div class="css-demo-pro-titles-flex">
-          <p id="css-demo-pro-title">div</p>
-          <p class="css-demo-pro-classes-wrapper css-demo-pro-truncate-classes">.card .small .main</p>
-        </div>
-        <p id="css-demo-pro-dimensions" class="css-demo-pro-dimensions"><i class="fas fa-ruler-combined"></i> <span class="css-demo-pro-dimensions-to-be-updated">400×519.98</span></p>
-        <p id="css-demo-pro-font" class="css-demo-pro-font"><i class="fas fa-font"></i> <span class="css-demo-pro-font-search-link">CerebriSans-Regular 18px</span></p>
-
-        <div class="css-demo-pro-code-editor" style="display: flex;">
-          <p id="css-demo-pro-code" class="scss hljs">backdrop-<span class="hljs-attribute">filter</span>: blur(<span class="hljs-number">13px</span>);<br>  <span class="hljs-attribute">background-color</span>: <span class="hljs-number"><span class="css-demo-pro-inline-color" style="background: rgba(0, 0, 0, 0.4)" contenteditable="false"></span>rgba(0, 0, 0, 0.4)</span>;<br>  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">20px</span>;<br>  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number"><span class="css-demo-pro-inline-color" style="background: rgba(255, 255, 255, 0.2)" contenteditable="false"></span>rgba(255, 255, 255, 0.2)</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">0</span> inset, <span class="hljs-number"><span class="css-demo-pro-inline-color" style="background: rgba(255, 255, 255, 0.05)" contenteditable="false"></span>rgba(255, 255, 255, 0.05)</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">0</span>;<br>  <span class="hljs-attribute">color</span>: <span class="hljs-number"><span class="css-demo-pro-inline-color" style="background: #FFFFFF" contenteditable="false"></span>#FFFFFF</span>;<br>  <span class="hljs-attribute">display</span>: inline-flex;<br>  <span class="hljs-attribute">flex-direction</span>: column;<br>  <span class="hljs-attribute">font-family</span>: CerebriSans-Regular, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;<br>  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;<br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">5em</span> <span class="hljs-number">10px</span> <span class="hljs-number">10px</span>;<br>  <span class="hljs-attribute">padding</span>: <span class="hljs-number">50px</span>;<br>  <span class="hljs-attribute">text-align</span>: left;<br>  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;</p>
+          <h3 class="profile-name">Dhruv Suru</h3><br><p style="margin-right: 50px;">Deputy </p>
+          <nobr>
+          <p class="about">Message</p>
+        </nobr>
+          <button class="btn"><a href="" >Following</a></button>
+          <div class="icons">
+            <i class="lni lni-linkedin-original"></i>
+            <i class="lni lni-github-original"></i>
+            <i class="lni lni-youtube"></i>
+            <i class="lni lni-twitter-original"></i>
           </div>
-        </div>
-      </div>
-    </div>
-  
-
-  <section class="explainer understand">
-    <p class="big-p">
-      We've spent four years testing and building <strong>the easier way to work with CSS</strong> so that you can get everything you need effortlessly. And it's always getting better.
-    </p>
-    <div class="cards-row with-cards-taking-half">
-      <div class="card reversed-illustration-order" style="
-background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%, #008FD5 93.4%);">
-        <div class="card-text">
-          <p class="card-title bigger">See animations code easily</p>
-          <p class="card-desc">
-            Understand how every CSS animation works by easily visualizing their code.
-          </p>
-        </div>
-        <div class="card-illustration" style="margin: 2em auto 0;">
-          <svg style="overflow: visible; color: inherit; width: 1em; height: 1em; vertical-align: -0.125em; --playState: paused;" class="animated-heart" data-animation="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
-            <path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
-          </svg>
-          <div class="css-demo-pro-dom-tree css-demo-pro-pinned-box" style="display: flex !important; left: 0px;" contenteditable="false">
-
-            <div class="css-demo-pro-titles-flex">
-              <p id="css-demo-pro-title" data-el="svg.animated-heart">svg</p>
-              <p class="css-demo-pro-classes-wrapper css-demo-pro-truncate-classes">.animated-heart</p>
-            </div>
-            <p id="css-demo-pro-dimensions" class="css-demo-pro-dimensions"><i class="fas fa-ruler-combined"></i> <span class="css-demo-pro-dimensions-to-be-updated">93.89×93.89</span></p>
-            <p id="css-demo-pro-font" class="css-demo-pro-font"><i class="fas fa-font"></i> <a href="https://www.google.com/search?q=CerebriSans-Regular+font" data-tippy-content="Click to search font on Google" class="css-demo-pro-font-search-link" rel="noopener noreferrer" target="_blank">CerebriSans-Regular</a> 80px</p>
-            <div id="css-demo-pro-attributes" class="css-demo-pro-attributes">
-              <details>
-                <summary class="css-demo-pro-attributes-summary"><i class="fas fa-asterisk"></i> 8 HTML attributes</summary>
-                <div><span class="css-demo-pro-attribute-name">aria-hidden</span>=<span class="css-demo-pro-attribute-value">"true"</span><br><span class="css-demo-pro-attribute-name">data-fa-i2svg</span>=<span class="css-demo-pro-attribute-value">"true"</span><br><span class="css-demo-pro-attribute-name">data-icon</span>=<span class="css-demo-pro-attribute-value">"heart"</span><br><span class="css-demo-pro-attribute-name">data-prefix</span>=<span class="css-demo-pro-attribute-value">"fas"</span><br><span class="css-demo-pro-attribute-name">focusable</span>=<span class="css-demo-pro-attribute-value">"false"</span><br><span class="css-demo-pro-attribute-name">role</span>=<span class="css-demo-pro-attribute-value">"img"</span><br><span class="css-demo-pro-attribute-name">viewBox</span>=<span class="css-demo-pro-attribute-value">"0 0 512 512"</span><br><span class="css-demo-pro-attribute-name">xmlns</span>=<span class="css-demo-pro-attribute-value">"http://www.w3.org/2000/svg"</span></div>
-              </details>
-            </div>
-            <div class="css-demo-pro-code-editor" style="display: flex;">
-              <p id="css-demo-pro-code" class="scss hljs" contenteditable="false" spellcheck="false" data-gramm="false"><span class="hljs-attribute">animation</span>: pulse <span class="hljs-number">700ms</span> infinite;<br><span class="hljs-attribute">display</span>: block;<br><span class="hljs-attribute">font-size</span>: <span class="hljs-number">80px</span>;<br><span class="hljs-attribute">height</span>: <span class="hljs-number">1em</span>;<br><span class="hljs-attribute">margin</span>: auto;<br><span class="hljs-attribute">vertical-align</span>: -.<span class="hljs-number">125em</span>;<br><span class="hljs-attribute">width</span>: <span class="hljs-number">1em</span>;</p>
-              <div class="css-demo-pro-pseudo-box" data-pseudo="@keyframes pulse"><span class="css-demo-pro-pseudo-name">@keyframes pulse</span>
-                <p class="css-demo-pro-pseudo-code scss hljs" contenteditable="false" spellcheck="false" data-gramm="false" style="margin-top: 0px !important;">50% {<br> <span class="hljs-attribute">filter</span>: brightness(<span class="hljs-number">1.2</span>);<br> <span class="hljs-attribute">transform</span>: scale(<span class="hljs-number">1.2</span>);<br>}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="cards-column" style="flex: 0 0 50%">
-        <div class="card transparent">
-          <div class="card-illustration click-to-copy">
-            <div class="card-example weather reveal">
-              <div class="card-example-body">
-                <p class="city">Los Angeles, USA</p>
-                <p class="date">Sunday, 11:00 pm</p>
-                <hr>
-                <div class="row">
-                  <div>
-                    <p class="temperature">22°</p>
-                    <p class="humidity">Humidity 66%</p>
-                  </div>
-                  <div>
-                    <div class="cloud" data-animation="" style="--playState: paused;"></div>
-                    <div class="sun" data-animation="" style="--playState: paused;"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="text-align: center;">
-              <img src="images/cursor.svg" alt="Cursor" class="cursor">
-              <div class="halo" style="z-index: -1;"></div>
-              <div class="copy-to-clipboard-demo-window">
-                <i class="fas fa-check margin-right"></i>
-                <span class="copied">Copied to clipboard!</span>
-              </div>
-            </div>
-          </div>
-          <div class="card-text">
-            <p class="card-title bigger">Click, and it's yours</p>
-            <p class="card-desc">
-              Copy the designs of your favorite websites, frameworks, or themes. Extract the HTML and CSS code of an element and all its children in seconds.
-            </p>
-          </div>
-        </div>
-        <div class="card transparent" style="margin-top: 0; padding-top: 0">
-          <div class="card-illustration control-100" data-animation="" style="--playState: paused;">
-            <div id="css-demo-pro-css" class="css-demo-pro-dom-tree" style="display: flex;"><div id="css-demo-pro-dom-tree">div .sibling-div<br><span class="css-demo-pro-dom-selected">div .parent-div</span><br><span class="css-demo-pro-indent-2">↳ div .child-div</span><br></div>
-                <div id="css-demo-pro-dom-tree-arrow-keys">
-                  <i class="fas fa-angle-up"></i>
-                  <i class="fas fa-angle-down"></i>
-                </div>
-                            <div class="css-demo-pro-titles-flex">
-                              <p id="css-demo-pro-title">div</p>
-                              <p class="css-demo-pro-classes-wrapper">.parent-div</p>
-                            </div>
-                            <p id="css-demo-pro-dimensions" class="css-demo-pro-dimensions"><i class="fas fa-ruler-combined"></i> <span class="css-demo-pro-dimensions-to-be-updated">700×51</span></p>
-                            <p id="css-demo-pro-font" class="css-demo-pro-font"><i class="fas fa-font"></i> <a href="https://www.google.com/search?q=CerebriSans-Regular+font" data-tippy-content="Click to search font on Google" class="css-demo-pro-font-search-link" rel="noopener noreferrer" target="_blank">CerebriSans-Regular</a> 18px</p>
-                            <p id="css-demo-pro-attributes" class="css-demo-pro-attributes"></p></div>
-          </div>
-          <div class="card-text">
-            <p class="card-title">You're 100% in control</p>
-            <p class="card-desc">
-              Not the right element you're looking for? Precisely re-target any DOM element using your keyboard's arrow keys (▲ ▼) or via the HTML Navigator in the menu.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="explainer export-elements">
-    <h2>
-      Collect your favorite elements
-    </h2>
-    <p class="big-p">
-      Bookmark your favorite elements across the web, and start your collection of beautiful elements you can use on your websites.
-    </p>
-    <div class="big-video lighter-mask no-mask-on-mobile">
-      <video class="animated-background-loading lazy" loop="" muted="true" playsinline="" autoplay="">
-        <source data-src="img/ExportFaster.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="cards-row centered-text">
-      <div class="card small">
-        <div class="card-illustration">
-          <div class="app-icon blur-glow center-bottom" style="z-index: 1; opacity: 0.8;">
-            <img src="images/codepen.png" loading="lazy">
-          </div>
-          <div class="app-icon center-bottom">
-            <img src="images/codepen.png" loading="lazy">
-          </div>
-          <img src="images/codepen%20cool%20but%20big.jpg" loading="lazy" class="fade-radial border border-radius brightness-0-9">
-        </div>
-        <div class="card-text">
-          <p class="card-title">Export elements to Codepen</p>
-          <p class="card-desc">Save your favorite elements on the cloud. Easily share their links with your team.</p>
-        </div>
-      </div>
-      <div class="card small">
-        <div class="card-illustration files">
-          <div class="app-icon blur-glow center-bottom" style="z-index: 1; opacity: 0.8;">
-            <i class="fas fa-download"></i>
-          </div>
-          <div class="app-icon center-bottom">
-            <i class="fas fa-download"></i>
-          </div>
-          <figure>
-            <img src="images/file.png" class="file">
-            <figcaption>Stripe's input.html</figcaption>
-          </figure>
-          <figure>
-            <img src="images/file.png" class="file">
-            <figcaption>Sketch's button.html</figcaption>
-          </figure>
-        </div>
-        <div class="card-text">
-          <p class="card-title">Save elements as files</p>
-          <p class="card-desc">
-            See an element you love? Save its HTML and CSS code as a file to your desktop.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="explainer assets-and-colors">
-    <h2>
-      Check everything you need
-    </h2>
-    <p class="big-p">
-      Curious about websites fonts, colors, etc? We are too.
-
-      Check everything: colors, fonts, animations, dimensions, and assets, from any website, at a glance.
-
-      <span class="button-cta-wrapper">
-        <button class="button-cta demo-button"><i class="fas fa-eye margin-right"></i> Try it on this page</button>
-      </span>
-    </p>
-    <div class="cards-row with-cards-taking-half">
-      <div class="card reversed-illustration-order centered-text">
-        <div class="card-text">
-          <p class="card-title bigger">All assets in one place</p>
-          <p class="card-desc">
-            No more digging the code to save images, including those hidden in backgrounds and HTML attributes.
-          </p>
-        </div>
-        <div class="card-illustration assets">
-          <img src="images/assets.png" alt="3 pictures" class="for-glow">
-          <img src="images/assets.png" alt="3 pictures">
-        </div>
-      </div>
-      <div class="card reversed-illustration-order">
-        <div class="card-text centered-text">
-          <p class="card-title bigger">Identify fonts</p>
-          <p class="card-desc">
-            By just hovering on them. On the fly. <!-- On the fly. As fast as it's possible. !-->
-          </p>
-        </div>
-        <div class="card-illustration identify-fonts centered-illustration">
-          <span class="typography-demo">Aa</span>
-          <img src="images/cursor.svg" alt="Cursor" class="cursor">
-          <div class="typography-demo-window">
-            <i class="fas fa-font"></i>
-            <span class="typography-demo-font-name">CerebriSans-Regular 60px</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="cards-row with-cards-taking-half" style="margin-bottom: 15px;">
-      <div class="card centered-text">
-        <div class="card-illustration color-palette">
-          <ul class="color-palette-demo fake fixBlurOnSafari">
-            <li style="background-color: #ffea00;"></li>
-            <li style="background-color: #f04300;"></li>
-            <li style="background-color: #30ff9a;"></li>
-            <li style="background-color: #76ff;"></li>
-            <li style="background-color: #f2f2fa;"></li>
-            <li style="background-color: #c0c0c;"></li>
-            <li style="background-color: #2e2727;"></li>
-            <li style="background-color: red;"></li>
-            <li style="background-color: #cc0000;"></li>
-            <li style="background-color: #37b975;"></li>
-            <li style="background-color: #ffa7a7;"></li>
-            <li style="background-color: #b70000;"></li>
-            <li style="background-color: rgba(255, 0, 0, 0.75);"></li>
-            <li style="background-color: #ff5e57;"></li>
-            <li style="background-color: #3b3534;"></li>
-            <li style="background-color: #534e4d;"></li>
-            <li style="background-color: #5f3c2d;"></li>
-            <li style="background-color: #2d1c13;"></li>
-            <li style="background-color: #352214;"></li>
-            <li style="background-color: #ffb26a;"></li>
-            <li style="background-color: #fdaf2e;"></li>
-            <li style="background-color: #a46c00;"></li>
-            <li style="background-color: #ffbb2e;"></li>
-            <li style="background-color: #ffe151;"></li>
-          </ul>
-          <ul class="color-palette-demo">
-            <li style="background-color: #ffea00;"></li>
-            <li style="background-color: #f04300;"></li>
-            <li style="background-color: #30ff9a;"></li>
-            <li style="background-color: #76ff;"></li>
-            <li style="background-color: #f2f2fa;"></li>
-            <li style="background-color: #c0c0c;"></li>
-            <li style="background-color: #2e2727;"></li>
-            <li style="background-color: red;"></li>
-            <li style="background-color: #cc0000;"></li>
-            <li style="background-color: #37b975;"></li>
-            <li style="background-color: #ffa7a7;"></li>
-            <li style="background-color: #b70000;"></li>
-            <li style="background-color: rgba(255, 0, 0, 0.75);"></li>
-            <li style="background-color: #ff5e57;"></li>
-            <li style="background-color: #3b3534;"></li>
-            <li style="background-color: #534e4d;"></li>
-            <li style="background-color: #5f3c2d;"></li>
-            <li style="background-color: #2d1c13;"></li>
-            <li style="background-color: #352214;"></li>
-            <li style="background-color: #ffb26a;"></li>
-            <li style="background-color: #fdaf2e;"></li>
-            <li style="background-color: #a46c00;"></li>
-            <li style="background-color: #ffbb2e;"></li>
-            <li style="background-color: #ffe151;"></li>
-          </ul>
-        </div>
-        <div class="card-text">
-          <p class="card-title bigger">Color palette</p>
-          <p class="card-desc">Check all the colors a website is using. Find the color you like, and click to copy.</p>
-        </div>
       </div>
       <div class="card">
-        <div class="card-illustration edit-texts centered-illustration">
-          <video class="animated-background-loading lazy" loop="" muted="true" playsinline="" autoplay="">
-            <source data-src="img/edit_texts.mp4" type="video/mp4">
-          </video>
+        <div class="cover-photo">
+            <img src="images/hessah.jpg" class="profile">
         </div>
-        <div class="card-text centered-text">
-          <p class="card-title bigger edit-text-typewrite-demo">Test new texts <span class="typewrite" data-type="[" in="" a="" blink",="" "in="" seconds",="" "live",="" "instantly"]"=""><span class="wrap">in a</span></span></p>
-          <p class="card-desc">
-            <!--Try different words directly on the page in a blazing fast way.!-->
-            Want to try a different copywriting?
-            Click on any text you want to change, type, and watch it happen.
-          </p>
+        <h3 class="profile-name">Hessah Sadath</h3><br><p style="margin-right: 50px;">Co-President</p>
+        <nobr>
+        <p class="about">Message</p>
+      </nobr>
+        <button class="btn"><a href="" >Following</a></button>
+        <div class="icons">
+          <i class="lni lni-linkedin-original"></i>
+          <i class="lni lni-github-original"></i>
+          <i class="lni lni-youtube"></i>
+          <i class="lni lni-twitter-original"></i>
         </div>
-      </div>
     </div>
-    <div id="css-pro-color-eyedropper-popup">
-      <div id="css-pro-color-eyedropper-colorshow" style="display: inline-block; background-color: #EA7E76;"></div>
-      <p id="css-pro-color-eyedropper-colorname">#EA7E76</p>
-    </div>
-    <div class="card half with-border color-eyedropper eyedropper-wrapper">
-      <div class="card-text">
-        <p class="card-title">Pick any color you need</p>
-        <p class="card-desc">
-          <!-- Pick any color you need. !-->
-
-          Point and click to get the color you're seeing with the <strong>color eyedropper</strong>.
-          <br class="hide-on-under-375">
-          It works even if it's an image.
-        </p>
       </div>
-      <div class="card-illustration">
-        <div class="art-wrapper">
-          <span class="art-title">a-coign-of-vantage.jpg</span>
-          <img src="images/lawrence.webp" loading="lazy">
-          <div class="css-pro-color-eyedropper-popup-for-mobile hide-on-desktop" style="left: 0px;transform: translate(70px, 216px);">
-            <img src="images/cursor_target.svg" alt="Cursor target" class="cursor">
-            <div class="css-pro-color-eyedropper-colorshow" style="display: inline-block; background-color: #E1ECEA;"></div>
-            <p class="css-pro-color-eyedropper-colorname">#E1ECEA</p>
+      <div style="display: flex; gap: 20px; margin-left: 100px;">
+        <div class="card">
+          <div class="cover-photo">
+              <img src="images/dhruv_syam.jpg" class="profile">
           </div>
-        </div>
-        <div class="art-wrapper">
-          <span class="art-title">conic gradient</span>
-          <div class="square"></div>
-        </div>
-        <div class="art-wrapper">
-          <span class="art-title">alternate gradient</span>
-          <div class="square dois"></div>
-        </div>
-        <div class="art-wrapper">
-          <span class="art-title">this gradient</span>
-          <div class="square tres"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="explainer position-relative ruler-explainer">
-    <div class="light-blob top-left"></div>
-    <div class="light-blob bottom-right"></div>
-    <div class="ruler-wrapper-to-set-margin">
-      <div class="ruler-illustration measure" id="measure-wrapper">
-        <div class="text">
-          <h2>
-            Measure anything, instantly.
-          </h2>
-          <p class="big-p">
-            Measure distances between everything you see on your browser, in real-time, even if it's an image.
-
-            It works like magic.
-          </p>
-        </div>
-        <div class="components">
-          <div class="rounded hide-on-mobile" style="left: -5%; top: -9%; width: 240px; height: 120px; opacity: .8"></div>
-          <div class="rounded" style="left: 5%; top: 26%; width: 50px; height: 50px; opacity: .8;"></div>
-          <div class="circle small hide-on-mobile-and-tablet" style="right: 17.3%; top: 8.7%;"></div>
-          <div class="circle small hide-on-mobile-and-tablet" style="right: 17.3%; top: 21.7%;"></div>
-          <div class="rounded" style="right: 35px; top: 9%; width: 130px; height: 14px;"></div>
-          <div class="rounded" style="right: 85px; top: 14%; width: 80px; height: 12px; opacity: .6"></div>
-          <div class="rounded hide-on-mobile" style="right: 35px; top: 22%; width: 130px; height: 14px;"></div>
-          <div class="rounded hide-on-mobile" style="right: 85px; top: 27%; width: 80px; height: 12px; opacity: .6"></div>
-          <div class="rounded hide-on-mobile-and-tablet" style="right: -1%; bottom: 22%; width: 220px; height: 47px;"></div>
-          <div class="square hide-on-mobile-and-tablet" style="right: 16.7%; bottom: 23.9%; width: 28px; height: 28px; background: linear-gradient(315deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .05));"></div>
-          <div class="rounded" style="right: -1%; bottom: 9%; width: 170px; height: 47px; opacity: .9;"></div>
-          <div class="square" style="right: 11.8%; bottom: 10.9%; width: 28px; height: 28px; background: linear-gradient(315deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .05));"></div>
-          <div class="circle big hide-on-mobile" style="bottom: -70px; left: 0px; transform: scale(2); opacity: .8;"></div>
-          <div class="circle big" style="bottom: -70px; left: 0px; box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.15); transform: scale(1.5); opacity: .7;"></div>
-          <div class="circle big" style="bottom: -70px; left: 0px; box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.15); opacity: .7;"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="pricing" id="pricing">
-    <h2>
-      Make beautiful websites faster
-    </h2>
-    <p class="big-p" id="buy">
-      <!-- Turn bad websites into great ones !-->
-      Take your work to the next level.<br>
-      Solo or with your team, CSS like a Pro.
-    </p>
-    <div class="personal-or-business quantity-control" id="buy-quantity">
-      <input type="button" value="-" class="decrease">
-      <div>
-        <span class="howmany">How many users?</span>
-        <input type="number" value="1" min="1" max="999" placeholder="1" class="quantity" onwheel="this.blur()">
-      </div>
-      <input type="button" value="+" class="increase">
-    </div>
-    <ul class="pricing-options personal" id="buy-now" data-animation="" style="--playState: paused;">
-      <li class="option monthly">
-        <p class="option-name">Monthly</p>
-        <div>
-          <p class="price"><span>$30</span>/month</p>
-          <p class="frequency">Billed every month</p>
-        </div>
-        <ul class="features">
-          <li><i class="fas fa-check-circle"></i> License for <span class="activations">3</span> <u class="activations-explainer" data-activations-tippy="" data-tippy-content="You can deactivate activations anytime. Activations are linked to browsers, not machines. So, for example, if your license allows for 3 activations, you can activate it on 3 different browsers (Chrome, Firefox, and Safari) or the same browser but on 3 different machines.">activations</u></li>
-          <li><i class="fas fa-check-circle"></i> Chrome, Firefox, Safari</li>
-          <li><i class="fas fa-check-circle"></i> Use on unlimited websites</li>
-        </ul>
-        <a class="buy-button" data-url-base="https://gum.co/csspro?wanted=true" href="https://gum.co/csspro?wanted=true" target="_blank">Get it now</a>
-      </li>
-      <li class="option yearly highlight">
-        <div class="sell-helper">76% of Pros choose Yearly</div>
-        <p class="option-name">Yearly</p>
-        <div>
-          <p class="price"><span>$15</span>/month</p>
-          <p class="frequency">Billed <span>$180</span> yearly</p>
-        </div>
-        <ul class="features">
-          <li><i class="fas fa-check-circle"></i> License for <span class="activations">3</span> <u class="activations-explainer" data-activations-tippy="" data-tippy-content="You can deactivate activations anytime. Activations are linked to browsers, not machines. So, for example, if your license allows for 3 activations, you can activate it on 3 different browsers (Chrome, Firefox, and Safari) or the same browser but on 3 different machines.">activations</u></li>
-          <li><i class="fas fa-check-circle"></i> Chrome, Firefox, Safari</li>
-          <li><i class="fas fa-check-circle"></i> Use on unlimited websites</li>
-          <li><i class="fas fa-check-circle"></i> Priority Support</li>
-          <li class="gradient-icon"><i class="fas fa-check-circle"></i> <span class="gradient-text">Save 50% - Get 6 months free</span></li>
-        </ul>
-        <a class="buy-button" data-url-base="https://gum.co/csspro?recurrence=yearly&amp;wanted=true" href="https://gum.co/csspro?recurrence=yearly&amp;wanted=true" target="_blank">Get it now</a>
-      </li>
-    </ul>
-    <ul class="pricing-options lifetime" data-animation="" >
-      <li class="option highlight">
-        <div>
-          <p class="option-name">Life-time</p>
-          <div>
-            <p class="price"><span>$900</span></p>
-            <p class="frequency">Billed only once</p>
+          <h3 class="profile-name">Dhruv Syam</h3><br><p style="margin-right: 50px;">Co-President</p>
+          <nobr>
+          <p class="about">Message</p>
+        </nobr>
+          <button class="btn"><a href="" >Following</a></button>
+          <div class="icons">
+            <i class="lni lni-linkedin-original"></i>
+            <i class="lni lni-github-original"></i>
+            <i class="lni lni-youtube"></i>
+            <i class="lni lni-twitter-original"></i>
           </div>
+      </div>
+      <div class="card">
+        <div class="cover-photo">
+            <img src="images/tanishka.jpg" class="profile">
         </div>
-        <ul class="features">
-          <li><i class="fas fa-check-circle"></i> License for <span class="activations">3</span> <u class="activations-explainer" data-activations-tippy="" data-tippy-content="You can deactivate activations anytime. Activations are linked to browsers, not machines. So, for example, if your license allows for 3 activations, you can activate it on 3 different browsers (Chrome, Firefox, and Safari) or the same browser but on 3 different machines.">activations</u></li>
-          <li><i class="fas fa-check-circle"></i> Everything included</li>
-          <li><i class="fas fa-check-circle"></i> Priority Support</li>
-          <li class="gradient-icon"><i class="fas fa-check-circle"></i> <span class="gradient-text">Pay once, use it forever</span></li>
-        </ul>
-        <a class="buy-button" data-url-base="https://gum.co/csspro-lifetime?wanted=true" href="https://gum.co/csspro-lifetime?wanted=true" target="_blank">Get it now</a>
-      </li>
-    </ul>
-    <!--<p class="small-p">
-      Browser extension available for Chrome, Firefox, and Safari.
-    </p>!-->
-    <p class="small-p small-font big-lineheight">
-      Prices in USD. Taxes may apply.
-      <br>
-      For Safari extension, macOS 10.13 or later required.
-      <br>
-      The extension will only work while your subscription is valid and not expired.
-    </p>
-  </section>
+        <h3 class="profile-name">Tanishkha Ramesh </h3><br><p style="margin-right: 50px;">Co-President</p>
+        <nobr>
+        <p class="about">Message</p>
+      </nobr>
+        <button class="btn"><a href="" >Following</a></button>
+        <div class="icons">
+          <i class="lni lni-linkedin-original"></i>
+          <i class="lni lni-github-original"></i>
+          <i class="lni lni-youtube"></i>
+          <i class="lni lni-twitter-original"></i>
+        </div>
+    </div>
+      </div>
+      <div style="display: flex; gap: 20px; margin-left: 100px;">
+        <div class="card">
+          <div class="cover-photo">
+              <img src="images/Minha.jpg" class="profile">
+          </div>
+          <h3 class="profile-name">Vaishal Anilkumar</h3><br><p style="margin-right: 50px;">Council Member</p>
+          <nobr>
+          <p class="about">Message</p>
+        </nobr>
+          <button class="btn"><a href="" >Following</a></button>
+          <div class="icons">
+            <i class="lni lni-linkedin-original"></i>
+            <i class="lni lni-github-original"></i>
+            <i class="lni lni-youtube"></i>
+            <i class="lni lni-twitter-original"></i>
+          </div>
+      </div>
+      <div class="card">
+        <div class="cover-photo">
+            <img src="images/riya.jpg" class="profile">
+        </div>
+        <h3 class="profile-name">Riya Delson</h3><br><p style="margin-right: 50px;">Council Member/p>
+        <nobr>
+        <p class="about">Abo</p>
+      </nobr>
+        <button class="btn"><a href="" >Following</a></button>
+        <div class="icons">
+          <i class="lni lni-linkedin-original"></i>
+          <i class="lni lni-github-original"></i>
+          <i class="lni lni-youtube"></i>
+          <i class="lni lni-twitter-original"></i>
+        </div>
+    </div>
+      </div>
+      
+        <h1 class="text-center aos-init aos-animate" data-aos="zoom-out-down">Welcome Technology Enthusiasts!</h1>
+        
+<div style="justify-content: center;" class="sub-explainer">
+  <div>
+    <a href="https://github.com"><button class="button-cta"><i class="lni lni-github-original"></i>Github</button></a>
+
+<div >
+  <a href="https://W3Schools.com"><button class="button-cta"><i class="lni lni-code-alt"></i>W3Schools</button></a>
+</div>
+<div >
+  <a href="https://getbootstrap.com/"><button class="button-cta"><i class="lni lni-bootstrap"></i>Bootstrap</button></a>
+</div>
+<div >
+  <a href="https://tailwindcss.com/"><button class="button-cta"><i class="lni lni-tailwindcss"></i>TailWind Css</button></a>
+</div>
+<div >
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><button class="button-cta"><i class="lni lni-javascript"></i>JavaScript</button></a>
+</div>
+<br>
+<div class="sub-explainer">
+<h2 class="mt-5 text-center">Research Papers</h2>
+</div>
+<div>
+<p style="margin-top: -100px;" class="text-center">Here are some research papers to deepen your understanding:</p>
+<div>
+  <a href="https://github.com"><button style="border-radius: 5px;" class="button-cta"><i class="lni lni-github-original"></i>Github</button></a>
+
+<div >
+<a href="https://W3Schools.com"><button style="border-radius: 5px;" class="button-cta"><i class="lni lni-code-alt"></i>W3Schools</button></a>
+</div>
+<div >
+<a href="https://getbootstrap.com/"><button style="border-radius: 5px;" class="button-cta"><i class="lni lni-bootstrap"></i>Bootstrap</button></a>
+</div>
+<div >
+<a href="https://tailwindcss.com/"><button style="border-radius: 5px;" class="button-cta"><i class="lni lni-tailwindcss"></i>TailWind Css</button></a>
+</div>
+<div >
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><button style="border-radius: 5px;" class="button-cta"><i class="lni lni-javascript"></i>JavaScript</button></a>
+</div>
+  
+</ul>
+  </div>
+  
   <footer>
     <div class="limited-width">
       <div class="link-list">
@@ -1042,7 +531,7 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
             <li><a href="#features">Features</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="https://www.youtube.com/watch?v=jKvOfrqtILY&amp;rel=0&amp;autoplay=1" data-lity="">Video</a></li>
-            <li><a href="https://csspro.gumroad.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliate Program</a></li>
+            <li><a href="https://example.gumroad.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliate Program</a></li>
           </ul>
         </div>
         <div class="links-category">
@@ -1050,8 +539,8 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
             Support
           </p>
           <ul>
-            <li><a href="https://docs.csspro.com" target="_blank">Documentation</a></li><a href="https://docs.csspro.com" target="_blank">
-            </a><li><a href="https://docs.csspro.com" target="_blank"></a><a href="/my-license">Forgot my license</a></li>
+            <li><a href="https://docs.example.com" target="_blank">Documentation</a></li><a href="https://docs.example.com" target="_blank">
+            </a><li><a href="https://docs.example.com" target="_blank"></a><a href="/my-license">Forgot my license</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -1078,23 +567,25 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
         </div>
       </div>
       <div class="bottom">
-        <img src="images/bwlogo.png" alt="CSS Pro logo" class="logo-img">
-        <p class="small">© 2024 CSS Pro. God Bless Us</p>
+        <img src="images/bwlogo.png" alt="inno tech logo" class="logo-img">
+        <p class="small">© 2024 inno tech. God Bless Us</p>
         <div class="socials">
-          <a href="https://twitter.com/csspro" target="_blank" ref="noopener noreferrer">
+          <a href="https://twitter.com/example" target="_blank" ref="noopener noreferrer">
             <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
           </a>
           <a href="https://www.youtube.com/channel/UC_jb7VqKOU4z1iAfh8-IF9w" target="_blank" ref="noopener noreferrer">
             <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
           </a>
-          <a href="https://facebook.com/csspros" target="_blank" ref="noopener noreferrer">
+          <a href="https://facebook.com/examples" target="_blank" ref="noopener noreferrer">
             <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
           </a>
         </div>
       </div>
     </div>
+    
   </footer>
   <div class="loading-demo"><img src="images/spinner.svg" alt="Loading spinner" width="15px" height="15px" style="vertical-align: text-bottom; padding-right: 5px;"> Loading demo... Please wait</div>
+
   <script>
     
     // Times in seconds.
@@ -1294,9 +785,9 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/ruler.js"></script>
   <script src="js/lity.min.js" async=""></script>
-  <script>
+ <!----> <script>
     $('.scroll-to-buy').click(function() {
-      window.closeCSSPro && window.closeCSSPro()
+      window.closeexample && window.closeexample()
       if (!this.classList.contains('buy')) {
         $('html, body').animate({
           scrollTop: $('#buy-quantity').offset().top - 125
@@ -1310,13 +801,13 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
     }
 
     function loadDemoScript () {
-      const demo_script = document.querySelector('#css-pro-demo-script')
+      const demo_script = document.querySelector('#csstech-demo-script')
       const demo_loading_warning = document.querySelector('.loading-demo')
 
       if (!demo_script) {
         const script = document.createElement('script')
         script.setAttribute('src', 'demo-build/main.js')
-        script.id = 'css-pro-demo-script'
+        script.id = 'csstech-demo-script'
         document.body.appendChild(script)
         console.log('pedindo 1', script)
 
@@ -1325,7 +816,7 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
           console.log('devia tirar', demo_loading_warning.style.display)
           if (demo_loading_warning && demo_loading_warning.style.display !== '') {
             console.log('pedindo')
-            window.cssProReady()
+            window.exampleReady()
             demo_loading_warning.remove()
           }
         }
@@ -1338,7 +829,7 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
     }
 
     window.onresize = function (e) {
-      const demo_script = document.querySelector('#css-pro-demo-script')
+      const demo_script = document.querySelector('#csstech-demo-script')
 
       if (canRunDemo() && (!demo_script || (demo_script && !demo_script.dataset.loaded))) {
         loadDemoScript()
@@ -1346,7 +837,7 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
     }
 
     $('.demo-button').click(function() {
-      const demo_script = document.querySelector('#css-pro-demo-script')
+      const demo_script = document.querySelector('#csstech-demo-script')
       const demo_loading_warning = document.querySelector('.loading-demo')
 
       console.log('vix', demo_script.dataset.loaded)
@@ -1357,13 +848,13 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
         }
 
       } else if (demo_script && demo_script.dataset.loaded) {
-        if (!window.isCSSProOpened) {
-          window.cssProReady()
+        if (!window.isexampleOpened) {
+          window.exampleReady()
           if (demo_loading_warning) {
             demo_loading_warning.remove()
           }
         } else {
-          window.closeCSSPro()
+          window.closeexample()
         }
       }
     })
@@ -1666,10 +1157,67 @@ background-image: linear-gradient(114deg, rgba(0, 0, 0, 0.4) 8.3%, #00283C 41.6%
       updateStyleVariables()
     })
   </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const progressContainer = document.createElement('div');
+    progressContainer.classList.add('progress-container'); 
+    document.body.appendChild(progressContainer);
 
+    const backgroundOverlay = document.createElement('div');
+    backgroundOverlay.classList.add('background-overlay'); 
+    progressContainer.appendChild(backgroundOverlay);
+
+    const progressBar = document.createElement('div');
+    progressBar.classList.add('progress-bar'); 
+    progressContainer.appendChild(progressBar);
+
+    let lastScrollTop = 0;
+
+    function updateProgressBar() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight || window.innerHeight;
+        const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+        progressBar.style.width = scrolled + '%';
+
+        if (scrollTop > lastScrollTop) {
+            changeGradient(progressBar, 'down');
+        } else {
+            changeGradient(progressBar, 'up');
+        }
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
+    }
+
+    function changeGradient(element, direction) {
+        let gradientStart, gradientEnd;
+
+        if (direction === 'down') {
+            gradientStart = '#00c6ff';
+            gradientEnd = '#0072ff';
+        } else {
+            gradientStart = '#ff7e5f';
+            gradientEnd = '#feb47b';
+        }
+
+        element.style.transition = 'background-color 0.3s ease';
+        element.style.background = `linear-gradient(90deg, ${gradientStart}, ${gradientEnd})`;
+    }
+
+    window.addEventListener('scroll', updateProgressBar);
+});
+
+
+
+  </script>
 <script src="js/gsap.min.js"></script>
-
+<script src="js/videoplayer.js"></script>
 <script src="js/new.js"></script>
 <style type="text/css">.typewrite > .wrap { border-right: 0.08em solid #fff}</style>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -92,3 +92,150 @@ div.tippy-box[data-inertia][data-state="visible"] {
   color: #fff;
   box-shadow: none;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #333;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff; 
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block; 
+}
+
+.dropdown-content a:hover {
+  border: 2px solid skyblue;
+  backdrop-filter: blur(40px);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+
+
+
+.container .row .col-6 {
+  max-width: 1050px; /* Adjust this value to make the video bigger */
+  margin: 0 auto;
+}
+
+.embed-responsive-16by9 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.policy-section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.policy-section p {
+  font-size: 16px;
+  line-height: 1.5;
+
+}
+
+.policy-section h3 {
+  color: #333;
+}
+
+.policy-section ol, .policy-section ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.cool-border {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  transition: border 0.3s ease, color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  margin: 10px; /* Add this line */
+}
+
+.cool-border:hover {
+  border: 1px solid red;
+  color: whitesmoke;
+}
+
+
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: #E4ECF1;
+  opacity: 50%;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 25%;
+  will-change: transform;
+  margin-bottom: 10px;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  opacity: 100%;
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}

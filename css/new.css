@@ -5,17 +5,17 @@
     font-size: 18px;
     font-family: CerebriSans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
 }
-#css-demo-pro-css, body {
+#css-demo-techcss, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
-#css-demo-pro-font a, .button-cta, a.buy-button, a.getitbutton, a.hero-button {
+#css-demo-tech-font a, .button-cta, a.buy-button, a.getitbutton, a.hero-button {
     text-decoration: none
 }
 .bold, .button-cta, .card-illustration.box-shadow-presets .box, .personal-or-business .buttons-wrapper button, body, h1 {
     font-family: CerebriSans, -apple-system, BlinkMacSystemFont, Roboto, sans-serif
 }
-#css-demo-pro-dimensions, .browser-address {
+#css-demo-tech-dimensions, .browser-address {
     text-overflow: ellipsis;
     white-space: nowrap
 }
@@ -23,7 +23,8 @@ body {
     color: #fff;
     margin: 0 auto;
     background: #252528;
-    text-align: center
+    text-align: center;
+    overflow-x: hidden;
 }
 canvas {
     display: block;
@@ -48,13 +49,14 @@ h1 {
 }
 .blurry-header-helper, header {
     position: fixed;
-    left: 0;
+    left: 50;
     width: 100%;
     right: 0
 }
 h1.two-lines {
     background-image: linear-gradient(150deg, #fff 50%, #2d82a4 100%)
 }
+
 h2 {
     font-size: 38px
 }
@@ -86,7 +88,7 @@ h2 {
     transform: translateY(-1px);
     margin-right: 4px
 }
-#css-demo-pro-css span, footer p.small, p.small-p.small-font {
+#css-demo-techcss span, footer p.small, p.small-p.small-font {
     font-size: 14px
 }
 .hero-buttons .getitbutton, .hero-buttons .hero-button {
@@ -141,6 +143,7 @@ header {
     padding: .8rem 2rem;
     background: 0 0;
     transition: .5s
+    
 }
 header:before {
     content: '';
@@ -154,7 +157,8 @@ header:before {
     height: 1px;
     background: rgba(255, 255, 255, .1);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .1) 7%, rgba(255, 255, 255, .1) 93%, rgba(255, 255, 255, 0) 100%);
-    transition: .2s ease-in-out
+    transition: .2s ease-in-out;
+    border-radius: 15px; /* Adjust the radius as needed */
 }
 header.active:before {
     width: 100%;
@@ -181,7 +185,7 @@ a, header a, header a:hover {
 .logo, nav ul {
     display: flex;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 header .logo-img {
     transform: translateY(-2px)
@@ -198,21 +202,28 @@ header .logo {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    
 }
 nav ul {
     justify-content: flex-end;
     list-style: none;
     align-items: center
 }
-nav li {
-    margin: 0 1em;
-    font-size: 16px
+.li {
+    margin: 0 0em;
+    font-size: 16px;
 }
-#css-demo-pro-code:empty, #css-demo-pro-css summary details:before, #css-demo-pro-css summary:before, #css-demo-pro-css:not(.css-demo-pro-dom-tree) #css-demo-pro-dom-tree, #css-demo-pro-css:not(.css-demo-pro-dom-tree) #css-demo-pro-dom-tree-arrow-keys, #css-pro-color-eyedropper-popup, #rulerImg, .card.color-eyedropper .card-illustration .art-wrapper:not(:first-child), .changes-demo-image.after, .color-palette-demo li:nth-child(16), .color-palette-demo li:nth-child(17), .color-palette-demo li:nth-child(18), .color-palette-demo li:nth-child(19), .color-palette-demo li:nth-child(20), .color-palette-demo li:nth-child(21), .color-palette-demo li:nth-child(22), .color-palette-demo li:nth-child(23), .color-palette-demo li:nth-child(24), .css-demo-pro-pinned-box summary details:before, .css-demo-pro-pinned-box summary:before, .css-demo-pro-tom-select-font-name:after, .css-demo-pro-tom-select-font-name:before, .css-demo-pro-tom-select-font-source:after, .css-demo-pro-tom-select-font-source:before, .demo-button, .hide-on-mobile, .hide-on-mobile-and-tablet, .isFirefox .pin-the-extension-helper, .isFirefox img.pin-the-extension-helper-arrow, .pricing-options.hidden, nav ul li:not(:last-child) {
-    display: none
+.wrong{
+    margin: 0 0em;
+    font-size: 16px;
 }
-.cards-row.with-cards-taking-half .card, nav li:last-child {
+.li:hover{
+    border: aqua solid 2px;
+    border-radius: 5px;
+}
+
+.cards-row.with-cards-taking-half .card, .li:last-child {
     margin-right: 0
 }
 .stars-bg {
@@ -265,7 +276,7 @@ nav li {
     content: "";
     position: absolute
 }
-.card-illustration .css-demo-pro-pinned-box, .card-illustration.assets, .card-illustration.convert-units .units-dropdown li.selected, .hero .promo-img, .position-relative, section.explainer.with-color {
+.card-illustration .css-demo-tech-pinned-box, .card-illustration.assets, .card-illustration.convert-units .units-dropdown li.selected, .hero .promo-img, .position-relative, section.explainer.with-color {
     position: relative
 }
 .small-star:before {
@@ -599,7 +610,7 @@ footer .link-list li {
     flex: initial;
     transition: opacity .2s
 }
-#css-demo-pro-code .css-demo-pro-inline-color, .card-illustration.gradients-example .gradient-example, .card-illustration.patterns-example>div:not(.pattern-grid-background), .card-illustration.presets>div, .card.with-border, .color-palette-demo li, .css-demo-pro-code .css-demo-pro-inline-color, .css-demo-pro-pinned-box .css-demo-pro-inline-color, .css-demo-pro-pseudo-box .css-demo-pro-inline-color, .css-pro-visual-editor-color-open-dropdown, .ease-gradients-demo-gradient-1, .ease-gradients-demo-gradient-2 {
+#css-demo-tech-code .css-demo-tech-inline-color, .card-illustration.gradients-example .gradient-example, .card-illustration.patterns-example>div:not(.pattern-grid-background), .card-illustration.presets>div, .card.with-border, .color-palette-demo li, .css-demo-tech-code .css-demo-tech-inline-color, .css-demo-tech-pinned-box .css-demo-tech-inline-color, .css-demo-tech-pseudo-box .css-demo-tech-inline-color, .csstech-visual-editor-color-open-dropdown, .ease-gradients-demo-gradient-1, .ease-gradients-demo-gradient-2 {
     box-shadow: rgb(255 255 255 / 20%) 0 0 0 1px inset, rgb(0 0 0 / 10%) 0 0 0 1px
 }
 .color-palette-demo:not(.fake) li:hover {
@@ -639,7 +650,7 @@ footer .link-list li {
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .05) inset;
     zoom: 0.75
 }
-.css-demo-pro-gradient-controls-pickr-background, .css-demo-pro-gradient-visualizer-pickr-background, .css-demo-pro-gradient-visualizer:before {
+.css-demo-tech-gradient-controls-pickr-background, .css-demo-tech-gradient-visualizer-pickr-background, .css-demo-tech-gradient-visualizer:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -649,7 +660,7 @@ footer .link-list li {
     position: absolute;
     border-radius: inherit
 }
-.css-demo-pro-gradient-controls-pickr-background, .css-demo-pro-gradient-visualizer-pickr-background {
+.css-demo-tech-gradient-controls-pickr-background, .css-demo-tech-gradient-visualizer-pickr-background {
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -660,7 +671,7 @@ footer .link-list li {
     margin: auto;
     pointer-events: none
 }
-.css-demo-pro-gradient-controls-track-item, .css-demo-pro-gradient-visualizer-slider-item {
+.css-demo-tech-gradient-controls-track-item, .css-demo-tech-gradient-visualizer-slider-item {
     width: 18px;
     height: 18px;
     background: #fff;
@@ -671,7 +682,7 @@ footer .link-list li {
     flex-direction: row;
     position: absolute
 }
-.css-demo-pro-gradient-controls-track-item:before, .css-demo-pro-gradient-visualizer-slider-item:before {
+.css-demo-tech-gradient-controls-track-item:before, .css-demo-tech-gradient-visualizer-slider-item:before {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -681,7 +692,7 @@ footer .link-list li {
     border-right: 4px solid transparent;
     border-top: 4px solid #fff
 }
-.css-demo-pro-gradient-controls-pickr, .css-demo-pro-gradient-visualizer-pickr {
+.css-demo-tech-gradient-controls-pickr, .css-demo-tech-gradient-visualizer-pickr {
     width: 14px;
     height: 14px;
     background: 0 0;
@@ -691,7 +702,7 @@ footer .link-list li {
     display: block;
     box-shadow: rgb(0 0 0 / 5%) 0 0 0 1px inset
 }
-.css-demo-pro-gradient-controls-track {
+.css-demo-tech-gradient-controls-track {
     width: 100%;
     height: calc(1px + 35px);
     top: 0;
@@ -703,7 +714,7 @@ footer .link-list li {
     box-sizing: border-box;
     align-items: flex-end
 }
-.css-demo-pro-gradient-controls-track-line {
+.css-demo-tech-gradient-controls-track-line {
     width: 100%;
     margin: 0 9px;
     background: #fff;
@@ -711,12 +722,12 @@ footer .link-list li {
     position: absolute;
     top: 18.5px
 }
-.css-demo-pro-gradient-controls-track-item {
+.css-demo-tech-gradient-controls-track-item {
     margin-bottom: 25px;
     z-index: 3;
     box-shadow: rgb(0, 0, 0, .15) 0 1px 5px
 }
-.css-demo-pro-gradient-controls-resize-circle:before {
+.css-demo-tech-gradient-controls-resize-circle:before {
     content: '';
     top: 3px;
     border-radius: 50%;
@@ -727,10 +738,10 @@ footer .link-list li {
     border: 1px solid #e7e7e7;
     left: 6px
 }
-.css-demo-pro-gradient-controls-overlay:not(.css-demo-pro-conic-gradient-overlay) .css-demo-pro-gradient-controls-track-line, .css-demo-pro-gradient-controls-resize-circle:before {
+.css-demo-tech-gradient-controls-overlay:not(.css-demo-tech-conic-gradient-overlay) .css-demo-tech-gradient-controls-track-line, .css-demo-tech-gradient-controls-resize-circle:before {
     box-shadow: rgb(17 17 26 / 7%) 0 0 5px, rgba(199, 199, 199, .33) 0 0 0 1px
 }
-.css-demo-pro-gradient-controls-overlay {
+.css-demo-tech-gradient-controls-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -744,7 +755,7 @@ footer .link-list li {
     width: 100%;
     height: 150px
 }
-.css-demo-pro-gradient-controls-resize-circle {
+.css-demo-tech-gradient-controls-resize-circle {
     position: absolute;
     padding: 10px;
     top: 12px;
@@ -807,10 +818,10 @@ small {
     background-color: #161616
 }
 .card-illustration.patterns-example>div#pattern-example-1 {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-css-pro-pattern-index='2' data-css-pro-pattern-opacity='100' data-css-pro-pattern-size='4px' data-css-pro-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-css-pro-pattern-front-color='%23FFFFFF' xmlns='http://www.w3.org/2000/svg' width='40px' height='44.6px' viewBox='0 0 200 223' fill='none' xmlns:v='https://vecta.io/nano'%3E%3Cg clip-path='url(%23A)'%3E%3Cpath d='M200 0H0V223H200V0Z' fill='rgba(255%2C%20255%2C%20255%2C%200)'/%3E%3Cpath d='M200 105.419V23.874L161 0h-7.85L198 27.335v72.323l-26.51-15.313.08-45.088-37.94-21.914V0h-4v14.343 13.522L102 43.858V0h-4v43.858L70.37 27.855V14.613 0h-4v17.343L29.94 38.397l-1.51.86.08 45.088L2 99.658V27.335L46.84 0H39L0 23.874v81.545l39.59-22.864 24.67 14.343L40.65 110.5l-3 1.71h.13L0 135.374v81.545l39.59-22.884 24.67 14.342-25.35 14.663h8l19.44-11.212v11.212h4v-15.723l-37.88-22.004-.05-29.875L98 194.585v28.455h4v-28.455l65.56-39.147-.05 29.875-36.26 21.064-1.62.94v15.723h4v-11.252l19.44 11.252h8l-25.34-14.603 24.68-14.402L200 216.919v-81.545l-37.5-23.004h.17l-26.93-15.473 24.67-14.343L200 105.419zM59.25 26.065L100 49.669l29.65-17.193 11.1-6.411 24.87 14.372L100 79.634 34.38 40.437l24.87-14.372zM32.49 73.813l-.05-29.875L98 83.085v72.273l-27.63-16.003v-13.242-30.296L32.49 73.813zm-2.55 76.084l-1.51.86.08 45.088L2 211.158v-72.323l43.26-26.375 21.11-12.172v28.555l-36.43 21.054zM100 191.134l-65.62-39.197 24.87-14.372L100 161.169l29.65-17.143 11.1-6.411 24.87 14.372L100 191.134zm54.71-78.694L198 138.835v72.323l-26.51-15.313.08-45.088-37.94-21.914v-28.555l21.08 12.152zm-23.46-17.563l-1.62.94v30.006 13.532L102 155.358V83.085l65.56-39.147-.05 29.875-36.26 21.064z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-csstech-pattern-index='2' data-csstech-pattern-opacity='100' data-csstech-pattern-size='4px' data-csstech-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-csstech-pattern-front-color='%23FFFFFF' xmlns='http://www.w3.org/2000/svg' width='40px' height='44.6px' viewBox='0 0 200 223' fill='none' xmlns:v='https://vecta.io/nano'%3E%3Cg clip-path='url(%23A)'%3E%3Cpath d='M200 0H0V223H200V0Z' fill='rgba(255%2C%20255%2C%20255%2C%200)'/%3E%3Cpath d='M200 105.419V23.874L161 0h-7.85L198 27.335v72.323l-26.51-15.313.08-45.088-37.94-21.914V0h-4v14.343 13.522L102 43.858V0h-4v43.858L70.37 27.855V14.613 0h-4v17.343L29.94 38.397l-1.51.86.08 45.088L2 99.658V27.335L46.84 0H39L0 23.874v81.545l39.59-22.864 24.67 14.343L40.65 110.5l-3 1.71h.13L0 135.374v81.545l39.59-22.884 24.67 14.342-25.35 14.663h8l19.44-11.212v11.212h4v-15.723l-37.88-22.004-.05-29.875L98 194.585v28.455h4v-28.455l65.56-39.147-.05 29.875-36.26 21.064-1.62.94v15.723h4v-11.252l19.44 11.252h8l-25.34-14.603 24.68-14.402L200 216.919v-81.545l-37.5-23.004h.17l-26.93-15.473 24.67-14.343L200 105.419zM59.25 26.065L100 49.669l29.65-17.193 11.1-6.411 24.87 14.372L100 79.634 34.38 40.437l24.87-14.372zM32.49 73.813l-.05-29.875L98 83.085v72.273l-27.63-16.003v-13.242-30.296L32.49 73.813zm-2.55 76.084l-1.51.86.08 45.088L2 211.158v-72.323l43.26-26.375 21.11-12.172v28.555l-36.43 21.054zM100 191.134l-65.62-39.197 24.87-14.372L100 161.169l29.65-17.143 11.1-6.411 24.87 14.372L100 191.134zm54.71-78.694L198 138.835v72.323l-26.51-15.313.08-45.088-37.94-21.914v-28.555l21.08 12.152zm-23.46-17.563l-1.62.94v30.006 13.532L102 155.358V83.085l65.56-39.147-.05 29.875-36.26 21.064z' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E")
 }
 .card-illustration.patterns-example>div#pattern-example-2 {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-css-pro-pattern-index='36' data-css-pro-pattern-opacity='100' data-css-pro-pattern-size='5px' data-css-pro-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-css-pro-pattern-front-color='%23FFFFFF' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st2{fill:%23FFFFFF} %3C/style%3E%3Cg style='display:none'%3E%3Cpath style='display:inline;fill:%236D6E71' d='M-64.9-73.9h675v675h-675z' id='Layer_2'/%3E%3C/g%3E%3Cg id='Layer_1'%3E%3Ccircle class='st2' cx='417.4' cy='83.7' r='82.8'/%3E%3Cpath class='st2' d='M78.1 82.7C78.1 38.2 43.1 2-.8 0v165.3c43.9-2 78.9-38.2 78.9-82.6zM87.9 82.7c0 44.4 35 80.7 78.9 82.7V0c-43.9 2-78.9 38.2-78.9 82.7zM167.2 167.3v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM332.8 332.7V167.3c-43.9 2-78.9 38.2-78.9 82.7s34.9 80.7 78.9 82.7zM417.3 253.7c-44.4 0-80.7 35-82.7 78.9H500c-2-43.9-38.2-78.9-82.7-78.9zM417.3 246.5c44.4 0 80.7-35 82.7-78.9H334.7c2 43.9 38.2 78.9 82.6 78.9zM84 421.1c-44.4 0-80.7 35-82.7 78.9h165.3c-2-43.9-38.2-78.9-82.6-78.9zM84 413.4c44.4 0 80.7-35 82.7-78.9H1.3c2 43.9 38.2 78.9 82.7 78.9zM250.1 78.9c44.4 0 80.7-35 82.7-78.9H167.4c2 43.9 38.3 78.9 82.7 78.9zM250.1 87.5c-44.4 0-80.7 35-82.7 78.9h165.3c-1.9-43.9-38.2-78.9-82.6-78.9z'/%3E%3Ccircle class='st2' cx='84.1' cy='250.1' r='82.8'/%3E%3Cpath class='st2' d='M167.2 334.5v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM421.9 417.2c0 44.4 35 80.7 78.9 82.7V334.6c-43.9 1.9-78.9 38.2-78.9 82.6z'/%3E%3Ccircle class='st2' cx='333.2' cy='417.3' r='82.8'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-csstech-pattern-index='36' data-csstech-pattern-opacity='100' data-csstech-pattern-size='5px' data-csstech-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-csstech-pattern-front-color='%23FFFFFF' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500' fill-opacity='1' style='enable-background:new 0 0 500 500'%3E%3Cstyle%3E .st2{fill:%23FFFFFF} %3C/style%3E%3Cg style='display:none'%3E%3Cpath style='display:inline;fill:%236D6E71' d='M-64.9-73.9h675v675h-675z' id='Layer_2'/%3E%3C/g%3E%3Cg id='Layer_1'%3E%3Ccircle class='st2' cx='417.4' cy='83.7' r='82.8'/%3E%3Cpath class='st2' d='M78.1 82.7C78.1 38.2 43.1 2-.8 0v165.3c43.9-2 78.9-38.2 78.9-82.6zM87.9 82.7c0 44.4 35 80.7 78.9 82.7V0c-43.9 2-78.9 38.2-78.9 82.7zM167.2 167.3v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM332.8 332.7V167.3c-43.9 2-78.9 38.2-78.9 82.7s34.9 80.7 78.9 82.7zM417.3 253.7c-44.4 0-80.7 35-82.7 78.9H500c-2-43.9-38.2-78.9-82.7-78.9zM417.3 246.5c44.4 0 80.7-35 82.7-78.9H334.7c2 43.9 38.2 78.9 82.6 78.9zM84 421.1c-44.4 0-80.7 35-82.7 78.9h165.3c-2-43.9-38.2-78.9-82.6-78.9zM84 413.4c44.4 0 80.7-35 82.7-78.9H1.3c2 43.9 38.2 78.9 82.7 78.9zM250.1 78.9c44.4 0 80.7-35 82.7-78.9H167.4c2 43.9 38.3 78.9 82.7 78.9zM250.1 87.5c-44.4 0-80.7 35-82.7 78.9h165.3c-1.9-43.9-38.2-78.9-82.6-78.9z'/%3E%3Ccircle class='st2' cx='84.1' cy='250.1' r='82.8'/%3E%3Cpath class='st2' d='M167.2 334.5v165.3c43.9-2 78.9-38.2 78.9-82.7s-34.9-80.6-78.9-82.6zM421.9 417.2c0 44.4 35 80.7 78.9 82.7V334.6c-43.9 1.9-78.9 38.2-78.9 82.6z'/%3E%3Ccircle class='st2' cx='333.2' cy='417.3' r='82.8'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 45px 45px
 }
 .card-illustration.patterns-example div#pattern-example-3 {
@@ -820,7 +831,7 @@ small {
     background-repeat: repeat, repeat
 }
 .card-illustration.patterns-example div#pattern-example-4 {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-css-pro-pattern-index='116' data-css-pro-pattern-opacity='100' data-css-pro-pattern-size='7px' data-css-pro-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-css-pro-pattern-front-color='%23FFFFFF' width='70px' height='70px' viewBox='0 0 480 480' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Eazulejo-33%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg stroke='none' stroke-width='1' fill='rgba(255%2C%20255%2C%20255%2C%200)' fill-rule='evenodd'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M203.911911,162 C206.666175,139.863681 220.675903,130.025445 225.965743,118 C231.255583,105.974555 230.977978,96 240,96 C249.022022,96 248.591268,106.281888 254.034257,118 C259.713473,129.996203 273.514776,140.761219 276.088089,162 C280.429305,197.830117 250.024469,212 248.019575,266 L231.980425,266 C229.97553,212 199.507296,197.400363 203.911911,162 Z M274.083196,266 C274.083196,266 266.06362,266.000003 258.044045,266 C264.058726,190 346.259375,169 358.288738,209 C369.321646,245.686593 323.203095,260.999998 328.21533,288 C329.325351,293.979481 325.207989,295.000001 322.200648,295.000001 C319.193307,295.000001 314.181073,288.999998 314.181073,282.000001 C314.181073,268.000004 327.440097,249.604189 313.178626,241.61538 C303.154157,236.000001 278.092983,247.000001 274.083196,266 Z M205.916804,266 C205.916804,266 213.93638,266.000003 221.955955,266 C215.941274,190 133.740625,169 121.711262,209 C110.678354,245.686593 156.796905,260.999998 151.78467,288 C150.674649,293.979481 154.792011,295.000001 157.799352,295.000001 C160.806693,295.000001 165.818927,288.999998 165.818927,282.000001 C165.818927,268.000004 152.559903,249.604189 166.821374,241.61538 C176.845843,236.000001 201.907017,247.000001 205.916804,266 Z M206.919251,274 L274.083196,274 L274.083196,282 L206.919251,282 L206.919251,274 Z M206.919251,288 L274.083196,288 L274.083196,296 L206.919251,296 L206.919251,288 Z M259.046492,302 C260.048939,315 268.068514,327 279.09543,327 C290.122347,327 292.12724,315 285.110112,312 C278.873479,309.333682 277.090536,315 277.090536,317 C275.085643,317 269.070961,313 267.066067,302 C265.061173,302 263.056279,302 259.046492,302 Z M221.037046,302 C220.034599,315 212.015023,327 200.988107,327 C189.961191,327 187.956297,315 194.973425,312 C201.210058,309.333682 202.993001,315 202.993001,317 C204.997895,317 211.012576,313 213.01747,302 C215.022364,302 217.027258,302 221.037046,302 Z M252.029363,371 C258.044045,365 263.056279,361 263.056279,350 C265.061173,350 275.085643,350 279.09543,339 C250.024469,333 248.019575,302 248.019575,302 L240.501223,302 L231.774794,302 C231.774794,302 229.718493,333 199.902123,339 C204.014726,350 214.296233,350 216.352534,350 C216.352534,361 221.493287,365 227.662192,371 C233.408753,376.589221 234.987765,383.808271 240,384 C245.012235,384 246.437619,376.578095 252.029363,371 Z' %3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg data-csstech-pattern-index='116' data-csstech-pattern-opacity='100' data-csstech-pattern-size='7px' data-csstech-pattern-back-color='rgba(255%2C%20255%2C%20255%2C%200)' data-csstech-pattern-front-color='%23FFFFFF' width='70px' height='70px' viewBox='0 0 480 480' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3Eazulejo-33%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg stroke='none' stroke-width='1' fill='rgba(255%2C%20255%2C%20255%2C%200)' fill-rule='evenodd'%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M203.911911,162 C206.666175,139.863681 220.675903,130.025445 225.965743,118 C231.255583,105.974555 230.977978,96 240,96 C249.022022,96 248.591268,106.281888 254.034257,118 C259.713473,129.996203 273.514776,140.761219 276.088089,162 C280.429305,197.830117 250.024469,212 248.019575,266 L231.980425,266 C229.97553,212 199.507296,197.400363 203.911911,162 Z M274.083196,266 C274.083196,266 266.06362,266.000003 258.044045,266 C264.058726,190 346.259375,169 358.288738,209 C369.321646,245.686593 323.203095,260.999998 328.21533,288 C329.325351,293.979481 325.207989,295.000001 322.200648,295.000001 C319.193307,295.000001 314.181073,288.999998 314.181073,282.000001 C314.181073,268.000004 327.440097,249.604189 313.178626,241.61538 C303.154157,236.000001 278.092983,247.000001 274.083196,266 Z M205.916804,266 C205.916804,266 213.93638,266.000003 221.955955,266 C215.941274,190 133.740625,169 121.711262,209 C110.678354,245.686593 156.796905,260.999998 151.78467,288 C150.674649,293.979481 154.792011,295.000001 157.799352,295.000001 C160.806693,295.000001 165.818927,288.999998 165.818927,282.000001 C165.818927,268.000004 152.559903,249.604189 166.821374,241.61538 C176.845843,236.000001 201.907017,247.000001 205.916804,266 Z M206.919251,274 L274.083196,274 L274.083196,282 L206.919251,282 L206.919251,274 Z M206.919251,288 L274.083196,288 L274.083196,296 L206.919251,296 L206.919251,288 Z M259.046492,302 C260.048939,315 268.068514,327 279.09543,327 C290.122347,327 292.12724,315 285.110112,312 C278.873479,309.333682 277.090536,315 277.090536,317 C275.085643,317 269.070961,313 267.066067,302 C265.061173,302 263.056279,302 259.046492,302 Z M221.037046,302 C220.034599,315 212.015023,327 200.988107,327 C189.961191,327 187.956297,315 194.973425,312 C201.210058,309.333682 202.993001,315 202.993001,317 C204.997895,317 211.012576,313 213.01747,302 C215.022364,302 217.027258,302 221.037046,302 Z M252.029363,371 C258.044045,365 263.056279,361 263.056279,350 C265.061173,350 275.085643,350 279.09543,339 C250.024469,333 248.019575,302 248.019575,302 L240.501223,302 L231.774794,302 C231.774794,302 229.718493,333 199.902123,339 C204.014726,350 214.296233,350 216.352534,350 C216.352534,361 221.493287,365 227.662192,371 C233.408753,376.589221 234.987765,383.808271 240,384 C245.012235,384 246.437619,376.578095 252.029363,371 Z' %3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
 }
 .card-illustration.assets .for-glow {
     filter: blur(33px);
@@ -881,7 +892,7 @@ small {
     left: 13px;
     margin-top: 3px
 }
-.card-illustration.convert-units .cursor, .card-illustration.convert-units .input-example, .card-illustration.convert-units .units-dropdown, .hero-css-pro img {
+.card-illustration.convert-units .cursor, .card-illustration.convert-units .input-example, .card-illustration.convert-units .units-dropdown, .hero-csstech img {
     position: absolute
 }
 .card-illustration.convert-units .input-example, .card-illustration.convert-units .units-dropdown {
@@ -968,12 +979,12 @@ small {
         transform: scale(1.2)
     }
 }
-#css-demo-pro-css {
+#css-demo-techcss {
     z-index: 9;
     letter-spacing: initial;
     font-style: initial
 }
-#css-demo-pro-attributes, #css-demo-pro-buttons, #css-demo-pro-code, #css-demo-pro-code span, #css-demo-pro-controls-tooltip, #css-demo-pro-copy, #css-demo-pro-css, #css-demo-pro-dimensions, #css-demo-pro-font, #css-demo-pro-ruler-box-dimensions, #css-demo-pro-title, .css-demo-pro-background-show-info-to-guide, .css-demo-pro-button, .css-demo-pro-button span, .css-demo-pro-copied, .css-demo-pro-media-query-code, .css-demo-pro-media-query-code span, .css-demo-pro-pinned-box, .css-demo-pro-pseudo-code, .css-demo-pro-pseudo-code span, .css-demo-pro-tom-select-font-source, .css-demo-pro-visual-editor-info span, .css-demo-pro-visual-editor-warning span, .css-pro-color-eyedropper-popup-for-mobile, .fn-tooltip {
+#css-demo-tech-attributes, #css-demo-tech-buttons, #css-demo-tech-code, #css-demo-tech-code span, #css-demo-tech-controls-tooltip, #css-demo-tech-copy, #css-demo-techcss, #css-demo-tech-dimensions, #css-demo-tech-font, #css-demo-tech-ruler-box-dimensions, #css-demo-tech-title, .css-demo-tech-background-show-info-to-guide, .css-demo-tech-button, .css-demo-tech-button span, .css-demo-tech-copied, .css-demo-tech-media-query-code, .css-demo-tech-media-query-code span, .css-demo-tech-pinned-box, .css-demo-tech-pseudo-code, .css-demo-tech-pseudo-code span, .css-demo-tech-tom-select-font-source, .css-demo-tech-visual-editor-info span, .css-demo-tech-visual-editor-warning span, .csstech-color-eyedropper-popup-for-mobile, .fn-tooltip {
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
     font-feature-settings: initial;
@@ -988,19 +999,19 @@ small {
     font-weight: initial;
     -webkit-text-fill-color: initial
 }
-.browser, .card .card-illustration.files figcaption, .css-demo-pro-classes-wrapper {
+.browser, .card .card-illustration.files figcaption, .css-demo-tech-classes-wrapper {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif
 }
-#css-demo-pro-css, .css-demo-pro-media-query-code, .css-demo-pro-pseudo-code {
+#css-demo-techcss, .css-demo-tech-media-query-code, .css-demo-tech-pseudo-code {
     color: #b1b1b1;
     text-align: left
 }
-#css-demo-pro-code span, .css-demo-pro-media-query-code span, .css-demo-pro-pseudo-code span {
+#css-demo-tech-code span, .css-demo-tech-media-query-code span, .css-demo-tech-pseudo-code span {
     display: inline-block;
     font-size: 14px;
     margin: initial
 }
-#css-demo-pro-code, p.css-demo-pro-media-query-code, p.css-demo-pro-pseudo-code {
+#css-demo-tech-code, p.css-demo-tech-media-query-code, p.css-demo-tech-pseudo-code {
     background: 0 0 !important;
     padding: 0;
     display: block;
@@ -1013,18 +1024,18 @@ small {
     margin: initial;
     text-align: left
 }
-.css-demo-pro-pseudo-box[data-pseudo*="@keyframes"] .css-demo-pro-media-query-code, .css-demo-pro-pseudo-box[data-pseudo*="@keyframes"] .css-demo-pro-pseudo-code {
+.css-demo-tech-pseudo-box[data-pseudo*="@keyframes"] .css-demo-tech-media-query-code, .css-demo-tech-pseudo-box[data-pseudo*="@keyframes"] .css-demo-tech-pseudo-code {
     white-space: pre-wrap
 }
-.css-demo-pro-media-query-code, .css-demo-pro-pseudo-code {
+.css-demo-tech-media-query-code, .css-demo-tech-pseudo-code {
     margin-top: 4.9px !important;
     margin-bottom: 0
 }
-#css-demo-pro-controls-tooltip, #css-demo-pro-ruler-box-dimensions, .card.color-eyedropper .card-illustration .art-wrapper, .css-demo-pro-background-show-info-to-guide, .css-demo-pro-pinned-box, .css-demo-pro-ruler-box-dimensions, .css-pro-color-eyedropper-popup-for-mobile, .fn-tooltip {
+#css-demo-tech-controls-tooltip, #css-demo-tech-ruler-box-dimensions, .card.color-eyedropper .card-illustration .art-wrapper, .css-demo-tech-background-show-info-to-guide, .css-demo-tech-pinned-box, .css-demo-tech-ruler-box-dimensions, .csstech-color-eyedropper-popup-for-mobile, .fn-tooltip {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px)
 }
-#css-demo-pro-css, #css-demo-pro-dom-tree, .css-demo-pro-pinned-box, .css-pro-color-eyedropper-popup-for-mobile {
+#css-demo-techcss, #css-demo-tech-dom-tree, .css-demo-tech-pinned-box, .csstech-color-eyedropper-popup-for-mobile {
     background: rgba(25, 25, 29, .95);
     border: 1px solid rgba(255, 255, 255, .1);
     max-width: 355px;
@@ -1044,18 +1055,18 @@ small {
     box-shadow: rgba(0, 0, 0, .12) 0 0 8px 0, rgba(0, 0, 0, .24) 0 4px 8px 0;
     box-sizing: border-box
 }
-#css-demo-pro-css.css-demo-pro-dom-tree {
+#css-demo-techcss.css-demo-tech-dom-tree {
     padding-top: 14px !important;
     border-radius: 0 0 20px 20px;
     border-top: 0
 }
-.css-demo-pro-indent-2 {
+.css-demo-tech-indent-2 {
     margin-left: 8px
 }
-.css-demo-pro-indent-4 {
+.css-demo-tech-indent-4 {
     margin-left: 24px
 }
-#css-demo-pro-dom-tree {
+#css-demo-tech-dom-tree {
     display: inline-block;
     line-height: 16px;
     padding: 15px 20px !important;
@@ -1073,18 +1084,18 @@ small {
     width: calc(100% + 2px);
     left: -1px
 }
-#css-demo-pro-dom-tree span {
+#css-demo-tech-dom-tree span {
     text-align: left;
     font-size: 12px;
     line-height: 16px;
     float: initial
 }
-.css-demo-pro-dom-selected {
+.css-demo-tech-dom-selected {
     font-weight: 700 !important;
     color: rgba(42, 245, 152, .7);
     animation: glow 1s infinite var(--playState)
 }
-#css-demo-pro-dom-tree:after {
+#css-demo-tech-dom-tree:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -1098,7 +1109,7 @@ small {
     width: 100%;
     height: 30px
 }
-#css-demo-pro-dom-tree-arrow-keys {
+#css-demo-tech-dom-tree-arrow-keys {
     font-size: 10px;
     position: absolute;
     right: 20px;
@@ -1108,10 +1119,10 @@ small {
     width: initial;
     height: initial
 }
-#css-demo-pro-dom-tree-arrow-keys .activated {
+#css-demo-tech-dom-tree-arrow-keys .activated {
     background: rgba(255, 255, 255, .5)
 }
-#css-demo-pro-dom-tree-arrow-keys i, #css-demo-pro-dom-tree-arrow-keys svg {
+#css-demo-tech-dom-tree-arrow-keys i, #css-demo-tech-dom-tree-arrow-keys svg {
     border: 1px solid #b1b1b1;
     padding: 1px 1.8px;
     border-radius: 6px;
@@ -1138,72 +1149,72 @@ small {
         text-shadow: 0 0 10px rgba(42, 245, 152, .7)
     }
 }
-#css-demo-pro-dom-tree-arrow-keys i.fa-angle-down, #css-demo-pro-dom-tree-arrow-keys svg.fa-angle-down {
+#css-demo-tech-dom-tree-arrow-keys i.fa-angle-down, #css-demo-tech-dom-tree-arrow-keys svg.fa-angle-down {
     margin-top: 5px
 }
-#css-demo-pro-attributes, #css-demo-pro-attributes div, #css-demo-pro-attributes div span, #css-demo-pro-css summary, #css-demo-pro-dimensions, #css-demo-pro-font, .css-demo-pro-pinned-box summary, ul#css-demo-pro-ul-shortcuts-dropdown li p {
+#css-demo-tech-attributes, #css-demo-tech-attributes div, #css-demo-tech-attributes div span, #css-demo-techcss summary, #css-demo-tech-dimensions, #css-demo-tech-font, .css-demo-tech-pinned-box summary, ul#css-demo-tech-ul-shortcuts-dropdown li p {
     font-size: 12.6px !important
 }
-#css-demo-pro-attributes span.css-demo-pro-attribute-name, #css-demo-pro-attributes span.css-demo-pro-attribute-value {
+#css-demo-tech-attributes span.css-demo-tech-attribute-name, #css-demo-tech-attributes span.css-demo-tech-attribute-value {
     display: inline
 }
-#css-demo-pro-dimensions {
+#css-demo-tech-dimensions {
     overflow: hidden;
     max-width: 100%
 }
-#css-demo-pro-attributes, #css-demo-pro-dimensions, #css-demo-pro-font {
+#css-demo-tech-attributes, #css-demo-tech-dimensions, #css-demo-tech-font {
     margin: 0;
     padding: 0
 }
-p#css-demo-pro-attributes, p#css-demo-pro-dimensions, p#css-demo-pro-dimensions span, p#css-demo-pro-font, p.css-demo-pro-attributes, p.css-demo-pro-dimensions, p.css-demo-pro-dimensions span, p.css-demo-pro-font {
+p#css-demo-tech-attributes, p#css-demo-tech-dimensions, p#css-demo-tech-dimensions span, p#css-demo-tech-font, p.css-demo-tech-attributes, p.css-demo-tech-dimensions, p.css-demo-tech-dimensions span, p.css-demo-tech-font {
     color: #ccc !important;
     width: max-content !important
 }
-#css-demo-pro-code:not(:empty) {
+#css-demo-tech-code:not(:empty) {
     margin-top: 9.8px !important
 }
-.css-demo-pro-pinned-box #css-demo-pro-code, .css-demo-pro-pseudo-code {
+.css-demo-tech-pinned-box #css-demo-tech-code, .css-demo-tech-pseudo-code {
     margin-top: 13px !important;
     margin-bottom: 0;
     clear: both
 }
-#css-demo-pro-title, .css-demo-pro-attributes, .css-demo-pro-classes-wrapper, .css-demo-pro-dimensions, .css-demo-pro-font, .css-demo-pro-media-query-box, .css-demo-pro-pseudo-box {
+#css-demo-tech-title, .css-demo-tech-attributes, .css-demo-tech-classes-wrapper, .css-demo-tech-dimensions, .css-demo-tech-font, .css-demo-tech-media-query-box, .css-demo-tech-pseudo-box {
     cursor: text;
     font-size: 14px;
     text-align: left;
     opacity: 1
 }
-#css-demo-pro-css, .css-demo-pro-code-editor, .css-demo-pro-pinned-box {
+#css-demo-techcss, .css-demo-tech-code-editor, .css-demo-tech-pinned-box {
     flex-direction: column
 }
-#css-demo-pro-code.hljs, #css-demo-pro-css.hljs, #css-demo-pro-media-query-code.hljs, #css-demo-pro-pseudo-code.hljs {
+#css-demo-tech-code.hljs, #css-demo-techcss.hljs, #css-demo-tech-media-query-code.hljs, #css-demo-tech-pseudo-code.hljs {
     overflow: initial
 }
-#css-demo-pro-css .hljs-link, #css-demo-pro-css .hljs-literal, #css-demo-pro-css .hljs-section, .css-demo-pro-pinned-box .hljs-link, .css-demo-pro-pinned-box .hljs-literal, .css-demo-pro-pinned-box .hljs-section, label[data-css-demo-pro-background-input] i {
+#css-demo-techcss .hljs-link, #css-demo-techcss .hljs-literal, #css-demo-techcss .hljs-section, .css-demo-tech-pinned-box .hljs-link, .css-demo-tech-pinned-box .hljs-literal, .css-demo-tech-pinned-box .hljs-section, label[data-css-demo-tech-background-input] i {
     color: #fff
 }
-#css-demo-pro-css .hljs-function .hljs-keyword, .css-demo-pro-pinned-box .hljs-function .hljs-keyword {
+#css-demo-techcss .hljs-function .hljs-keyword, .css-demo-tech-pinned-box .hljs-function .hljs-keyword {
     color: #ff79c6 !important
 }
-#css-demo-pro-css .hljs, #css-demo-pro-css .hljs-selector-class, #css-demo-pro-css .hljs-subst, .css-demo-pro-pinned-box .hljs, .css-demo-pro-pinned-box .hljs-selector-class, .css-demo-pro-pinned-box .hljs-subst {
+#css-demo-techcss .hljs, #css-demo-techcss .hljs-selector-class, #css-demo-techcss .hljs-subst, .css-demo-tech-pinned-box .hljs, .css-demo-tech-pinned-box .hljs-selector-class, .css-demo-tech-pinned-box .hljs-subst {
     color: #b8cdd1 !important
 }
-#css-demo-pro-attributes details.css-demo-pro-attributes-too-big-details, #css-demo-pro-attributes span.css-demo-pro-attribute-value, #css-demo-pro-css .hljs-string, .css-demo-pro-pinned-box .hljs-string {
+#css-demo-tech-attributes details.css-demo-tech-attributes-too-big-details, #css-demo-tech-attributes span.css-demo-tech-attribute-value, #css-demo-techcss .hljs-string, .css-demo-tech-pinned-box .hljs-string {
     color: #f1fa8c !important
 }
-#css-demo-pro-css .hljs-addition, #css-demo-pro-css .hljs-attribute, #css-demo-pro-css .hljs-bullet, #css-demo-pro-css .hljs-name, #css-demo-pro-css .hljs-symbol, #css-demo-pro-css .hljs-template-tag, #css-demo-pro-css .hljs-template-variable, #css-demo-pro-css .hljs-title, #css-demo-pro-css .hljs-type, #css-demo-pro-css .hljs-variable, .css-demo-pro-pinned-box .hljs-addition, .css-demo-pro-pinned-box .hljs-attribute, .css-demo-pro-pinned-box .hljs-bullet, .css-demo-pro-pinned-box .hljs-name, .css-demo-pro-pinned-box .hljs-symbol, .css-demo-pro-pinned-box .hljs-template-tag, .css-demo-pro-pinned-box .hljs-template-variable, .css-demo-pro-pinned-box .hljs-title, .css-demo-pro-pinned-box .hljs-type, .css-demo-pro-pinned-box .hljs-variable {
+#css-demo-techcss .hljs-addition, #css-demo-techcss .hljs-attribute, #css-demo-techcss .hljs-bullet, #css-demo-techcss .hljs-name, #css-demo-techcss .hljs-symbol, #css-demo-techcss .hljs-template-tag, #css-demo-techcss .hljs-template-variable, #css-demo-techcss .hljs-title, #css-demo-techcss .hljs-type, #css-demo-techcss .hljs-variable, .css-demo-tech-pinned-box .hljs-addition, .css-demo-tech-pinned-box .hljs-attribute, .css-demo-tech-pinned-box .hljs-bullet, .css-demo-tech-pinned-box .hljs-name, .css-demo-tech-pinned-box .hljs-symbol, .css-demo-tech-pinned-box .hljs-template-tag, .css-demo-tech-pinned-box .hljs-template-variable, .css-demo-tech-pinned-box .hljs-title, .css-demo-tech-pinned-box .hljs-type, .css-demo-tech-pinned-box .hljs-variable {
     color: #48c5de !important
 }
-#css-demo-pro-css .hljs-number, .css-demo-pro-pinned-box .hljs-number {
+#css-demo-techcss .hljs-number, .css-demo-tech-pinned-box .hljs-number {
     color: #bd93f9 !important
 }
-#css-demo-pro-css .hljs-comment, #css-demo-pro-css .hljs-deletion, #css-demo-pro-css .hljs-meta, #css-demo-pro-css .hljs-quote, .css-demo-pro-pinned-box .hljs-comment, .css-demo-pro-pinned-box .hljs-deletion, .css-demo-pro-pinned-box .hljs-meta, .css-demo-pro-pinned-box .hljs-quote {
+#css-demo-techcss .hljs-comment, #css-demo-techcss .hljs-deletion, #css-demo-techcss .hljs-meta, #css-demo-techcss .hljs-quote, .css-demo-tech-pinned-box .hljs-comment, .css-demo-tech-pinned-box .hljs-deletion, .css-demo-tech-pinned-box .hljs-meta, .css-demo-tech-pinned-box .hljs-quote {
     color: #6272a4 !important
 }
-#css-demo-pro-css .hljs-emphasis, .css-demo-pro-pinned-box .hljs-emphasis {
+#css-demo-techcss .hljs-emphasis, .css-demo-tech-pinned-box .hljs-emphasis {
     font-style: italic
 }
-#css-demo-pro-code .css-demo-pro-inline-color, .css-demo-pro-code .css-demo-pro-inline-color, .css-demo-pro-media-query-box .css-demo-pro-inline-color, .css-demo-pro-pinned-box .css-demo-pro-inline-color, .css-demo-pro-pseudo-box .css-demo-pro-inline-color {
+#css-demo-tech-code .css-demo-tech-inline-color, .css-demo-tech-code .css-demo-tech-inline-color, .css-demo-tech-media-query-box .css-demo-tech-inline-color, .css-demo-tech-pinned-box .css-demo-tech-inline-color, .css-demo-tech-pseudo-box .css-demo-tech-inline-color {
     width: 14px !important;
     height: 14px !important;
     border-radius: 40px;
@@ -1213,13 +1224,13 @@ p#css-demo-pro-attributes, p#css-demo-pro-dimensions, p#css-demo-pro-dimensions 
     margin-top: -2px;
     border: 0
 }
-#css-demo-pro-attributes, #css-demo-pro-dimensions, #css-demo-pro-dom-tree, #css-demo-pro-dom-tree-arrow-keys, #css-demo-pro-font, .css-demo-pro-titles-flex {
+#css-demo-tech-attributes, #css-demo-tech-dimensions, #css-demo-tech-dom-tree, #css-demo-tech-dom-tree-arrow-keys, #css-demo-tech-font, .css-demo-tech-titles-flex {
     order: -1
 }
-#css-demo-pro-font a {
+#css-demo-tech-font a {
     color: #ccc
 }
-#css-demo-pro-title, .css-demo-pro-copied {
+#css-demo-tech-title, .css-demo-tech-copied {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
@@ -1229,23 +1240,23 @@ p#css-demo-pro-attributes, p#css-demo-pro-dimensions, p#css-demo-pro-dimensions 
     display: inline;
     padding: initial
 }
-#css-demo-pro-check-icon, #css-demo-pro-dock .css-demo-pro-copied, #css-demo-pro-dock i#css-demo-pro-check-icon, #css-demo-pro-title, .css-demo-pro-copied {
+#css-demo-tech-check-icon, #css-demo-tech-dock .css-demo-tech-copied, #css-demo-tech-dock i#css-demo-tech-check-icon, #css-demo-tech-title, .css-demo-tech-copied {
     color: #2af598 !important
 }
-.css-demo-pro-classes-wrapper {
+.css-demo-tech-classes-wrapper {
     list-style: none;
     margin: 0;
     padding: 0;
     color: #2af598
 }
-.css-demo-pro-classes-wrapper:not(:empty) {
+.css-demo-tech-classes-wrapper:not(:empty) {
     display: inline;
     word-break: break-all;
     font-weight: 700;
     font-size: 16px !important;
     line-height: inherit !important
 }
-.card-illustration.control-100 #css-demo-pro-css, .sub-explainer.with-margin-top {
+.card-illustration.control-100 #css-demo-techcss, .sub-explainer.with-margin-top {
     margin-top: 80px
 }
 .card-illustration.control-100 {
@@ -1317,77 +1328,77 @@ p#css-demo-pro-attributes, p#css-demo-pro-dimensions, p#css-demo-pro-dimensions 
     -webkit-mask-image: none;
     -webkit-mask-image: linear-gradient(0deg, transparent 22%, black 100%)
 }
-.css-demo-pro-pinned-box .css-demo-pro-media-query-box, .css-demo-pro-pinned-box .css-demo-pro-pseudo-box {
+.css-demo-tech-pinned-box .css-demo-tech-media-query-box, .css-demo-tech-pinned-box .css-demo-tech-pseudo-box {
     box-shadow: rgba(0, 0, 0, .07) 0 1px 1px, rgba(0, 0, 0, .07) 0 2px 2px, rgba(0, 0, 0, .07) 0 4px 4px, rgba(0, 0, 0, .07) 0 8px 8px, rgba(0, 0, 0, .07) 0 16px 16px
 }
-.activations-list .card .desktop-icon, .css-demo-pro-pinned-box .css-demo-pro-code-editor>.css-demo-pro-media-query-box, .css-demo-pro-pinned-box .css-demo-pro-code-editor>.css-demo-pro-pseudo-box, .margin-right-8px, .personal-or-business .buttons-wrapper button svg {
+.activations-list .card .desktop-icon, .css-demo-tech-pinned-box .css-demo-tech-code-editor>.css-demo-tech-media-query-box, .css-demo-tech-pinned-box .css-demo-tech-code-editor>.css-demo-tech-pseudo-box, .margin-right-8px, .personal-or-business .buttons-wrapper button svg {
     margin-right: 8px
 }
-.css-demo-pro-media-query-box, .css-demo-pro-pseudo-box {
+.css-demo-tech-media-query-box, .css-demo-tech-pseudo-box {
     padding: 7px 11px;
     background: rgba(255, 255, 255, .065);
     border-radius: 12px;
     margin-top: 14px;
     border: 1px solid rgba(255, 255, 255, .09)
 }
-.css-demo-pro-pseudo-box .css-demo-pro-media-query-box, .css-demo-pro-pseudo-box .css-demo-pro-media-query-box[data-activated=true]~.css-demo-pro-media-query-box[data-activated=true] {
+.css-demo-tech-pseudo-box .css-demo-tech-media-query-box, .css-demo-tech-pseudo-box .css-demo-tech-media-query-box[data-activated=true]~.css-demo-tech-media-query-box[data-activated=true] {
     margin-top: 13px
 }
-.css-demo-pro-pseudo-box .css-demo-pro-media-query-box[data-activated=true] {
+.css-demo-tech-pseudo-box .css-demo-tech-media-query-box[data-activated=true] {
     margin-top: 23px
 }
-.css-demo-pro-media-query-query, .css-demo-pro-pseudo-name {
+.css-demo-tech-media-query-query, .css-demo-tech-pseudo-name {
     display: inline-block;
     margin-bottom: 0 !important;
     font-weight: 700 !important;
     outline: 0 !important;
     word-break: break-all
 }
-.css-demo-pro-pseudo-name {
+.css-demo-tech-pseudo-name {
     color: #2af598;
     order: -1;
     margin-bottom: -13px !important
 }
-#css-demo-pro-attributes div, .css-demo-pro-attributes div {
+#css-demo-tech-attributes div, .css-demo-tech-attributes div {
     padding-left: 15px;
     word-break: break-all;
     margin: 0;
     max-width: 290px
 }
-#css-demo-pro-attributes details.css-demo-pro-attributes-too-big-details {
+#css-demo-tech-attributes details.css-demo-tech-attributes-too-big-details {
     display: inline;
     margin-left: 5px
 }
-#css-demo-pro-attributes details>div {
+#css-demo-tech-attributes details>div {
     box-sizing: content-box;
     width: 96%
 }
-#css-demo-pro-attributes summary.css-demo-pro-attributes-too-big-expand {
+#css-demo-tech-attributes summary.css-demo-tech-attributes-too-big-expand {
     cursor: pointer
 }
-#css-demo-pro-attributes summary.css-demo-pro-attributes-too-big-expand:hover, .download a:not(.button-cta), .faq a:not(.button-cta), .need-more-activations a {
+#css-demo-tech-attributes summary.css-demo-tech-attributes-too-big-expand:hover, .download a:not(.button-cta), .faq a:not(.button-cta), .need-more-activations a {
     text-decoration: underline
 }
-#css-demo-pro-attributes span.css-demo-pro-attribute-name {
+#css-demo-tech-attributes span.css-demo-tech-attribute-name {
     color: #50fa7b !important
 }
-#css-demo-pro-css summary, .css-demo-pro-pinned-box summary {
+#css-demo-techcss summary, .css-demo-tech-pinned-box summary {
     color: #ccc;
     margin: 0;
     line-height: 24px;
     display: list-item;
     list-style: disclosure-closed inside
 }
-#css-demo-pro-css details[open] summary, .css-demo-pro-pinned-box details[open] summary {
+#css-demo-techcss details[open] summary, .css-demo-tech-pinned-box details[open] summary {
     margin: 0;
     list-style-type: disclosure-open
 }
-#css-demo-pro-attributes details, #css-demo-pro-css details {
+#css-demo-tech-attributes details, #css-demo-techcss details {
     margin: 0;
     padding: 0;
     border: 0
 }
-#css-demo-pro-css summary:-webkit-details-marker, #css-demo-pro-css summary:marker, .css-demo-pro-pinned-box summary:-webkit-details-marker, .css-demo-pro-pinned-box summary:marker {
+#css-demo-techcss summary:-webkit-details-marker, #css-demo-techcss summary:marker, .css-demo-tech-pinned-box summary:-webkit-details-marker, .css-demo-tech-pinned-box summary:marker {
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
     text-transform: none;
@@ -1395,17 +1406,17 @@ p#css-demo-pro-attributes, p#css-demo-pro-dimensions, p#css-demo-pro-dimensions 
     text-align: start !important;
     text-align-last: start !important
 }
-#css-demo-pro-css summary:hover, .css-demo-pro-pinned-box summary:hover {
+#css-demo-techcss summary:hover, .css-demo-tech-pinned-box summary:hover {
     text-decoration: underline;
     cursor: pointer
 }
-#css-demo-pro-attributes>i.css-demo-pro-fa-asterisk, .css-demo-pro-attributes>i.css-demo-pro-fa-asterisk {
+#css-demo-tech-attributes>i.css-demo-tech-fa-asterisk, .css-demo-tech-attributes>i.css-demo-tech-fa-asterisk {
     margin-left: -15px
 }
-.css-demo-pro-attributes-summary i.css-demo-pro-fa-asterisk, label[data-css-demo-pro-visual-button] span.css-demo-pro-visual-button-span, label[data-css-demo-pro-visual-button] svg {
+.css-demo-tech-attributes-summary i.css-demo-tech-fa-asterisk, label[data-css-demo-tech-visual-button] span.css-demo-tech-visual-button-span, label[data-css-demo-tech-visual-button] svg {
     pointer-events: none
 }
-#css-demo-pro-attributes>i.css-demo-pro-fa-chevron-down, .css-demo-pro-attributes>i.css-demo-pro-fa-chevron-down {
+#css-demo-tech-attributes>i.css-demo-tech-fa-chevron-down, .css-demo-tech-attributes>i.css-demo-tech-fa-chevron-down {
     font-size: 9px;
     margin-left: 2px
 }
@@ -1548,20 +1559,20 @@ p.card-example-desc {
     font-size: 1.5em;
     margin-top: 0
 }
-.big-video, .hero-css-pro {
+.big-video, .hero-csstech {
     position: relative;
     width: 90%;
     left: 0;
     right: 0;
     margin: auto
 }
-.big-video.with-margin-bottom, .hero-css-pro {
+.big-video.with-margin-bottom, .hero-csstech {
     margin-bottom: 4em
 }
 section.next-level-backgrounds .big-video {
     margin-bottom: 50px
 }
-.big-video img, .big-video video, .hero-css-pro img:not(.visual-editor-example), .hero-css-pro video {
+.big-video img, .big-video video, .hero-csstech img:not(.visual-editor-example), .hero-csstech video {
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -1570,14 +1581,14 @@ section.next-level-backgrounds .big-video {
     border: 1px solid rgba(255, 255, 255, .1);
     -webkit-mask-image: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 40%, hsla(0, 0%, 0%, 0.972) 46.53%, hsla(0, 0%, 0%, 0.896) 52.38%, hsla(0, 0%, 0%, 0.784) 57.7%, hsla(0, 0%, 0%, 0.648) 62.69%, hsla(0, 0%, 0%, 0.5) 67.5%, hsla(0, 0%, 0%, 0.352) 72.31%, hsla(0, 0%, 0%, 0.216) 77.3%, hsla(0, 0%, 0%, 0.104) 82.63%, hsla(0, 0%, 0%, 0.028) 88.47%, hsla(0, 0%, 0%, 0) 95%)
 }
-.hero-css-pro video, .without-mask video {
+.hero-csstech video, .without-mask video {
     -webkit-mask-image: none
 }
 .big-video.lighter-mask video {
     -webkit-mask-image: linear-gradient(black 70%, transparent 95%);
     -webkit-mask-image: linear-gradient(180deg, hsla(0, 0%, 0%, 1) 70%, hsla(0, 0%, 0%, 0.972) 72.97%, hsla(0, 0%, 0%, 0.896) 75.63%, hsla(0, 0%, 0%, 0.784) 78.05%, hsla(0, 0%, 0%, 0.648) 80.31%, hsla(0, 0%, 0%, 0.5) 82.5%, hsla(0, 0%, 0%, 0.352) 84.69%, hsla(0, 0%, 0%, 0.216) 86.96%, hsla(0, 0%, 0%, 0.104) 89.38%, hsla(0, 0%, 0%, 0.028) 92.03%, hsla(0, 0%, 0%, 0) 95%)
 }
-.hero-css-pro .visual-editor-example {
+.hero-csstech .visual-editor-example {
     height: auto;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, .1);
@@ -2291,7 +2302,7 @@ u.activations-explainer {
     -webkit-mask-size: 500px 500px;
     -webkit-mask-position: calc(var(--mask-position-x) - 500px / 2) calc(var(--mask-position-y) - 500px / 2)
 }
-.scan-magic .card.mask-div .css-demo-pro-pinned-box {
+.scan-magic .card.mask-div .css-demo-tech-pinned-box {
     width: 100% !important;
     height: 100%;
     padding: 50px !important;
@@ -2440,12 +2451,12 @@ section.changes {
     border-top: 1px solid rgba(255, 255, 255, .35);
     padding-top: 5em
 }
-section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds {
+section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds {
     padding: 0;
     margin: 6em 0;
     max-width: 100%
 }
-section.explainer.become-a-css-pro, section.explainer.next-level-backgrounds {
+section.explainer.become-a-csstech, section.explainer.next-level-backgrounds {
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
@@ -2454,7 +2465,7 @@ section.explainer.become-a-css-pro, section.explainer.next-level-backgrounds {
 section.explainer.next-level-backgrounds h2 {
     max-width: 780px
 }
-section.explainer.become-a-css-pro {
+section.explainer.become-a-csstech {
     margin-top: 10em;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 79%, #252528 100%), linear-gradient(180deg, #252528 0, rgba(0, 0, 0, 0) 21%), linear-gradient(rgba(5, 236, 202, .61), rgba(5, 236, 202, .61)), linear-gradient(120deg, red 0, #2400ff 100%), linear-gradient(120deg, #fa00ff 0, #208200 100%), linear-gradient(130deg, #00f0ff 0, #000 100%), radial-gradient(110% 140% at 15% 90%, #fff 0, #1700a4 100%), radial-gradient(100% 100% at 50% 0, #ad00ff 0, #00ffe0 100%), radial-gradient(100% 100% at 50% 0, #00ffe0 0, #7300a9 80%), linear-gradient(30deg, #7ca304 0, #20a 100%);
     background-blend-mode: normal, normal, color, overlay, color, overlay, difference, color-dodge, difference, normal;
@@ -2569,7 +2580,7 @@ svg.fa-trophy path {
     margin-left: 25px;
     margin-top: 0
 }
-section.assets-and-colors .card, section.become-a-css-pro .card, section.changes .card, section.next-level-backgrounds .card {
+section.assets-and-colors .card, section.become-a-csstech .card, section.changes .card, section.next-level-backgrounds .card {
     backdrop-filter: none;
     -webkit-backdrop-filter: none
 }
@@ -2580,7 +2591,7 @@ section.next-level-backgrounds h2 {
     position: relative;
     z-index: 1
 }
-label[data-css-demo-pro-background-input], label[data-css-demo-pro-color-input], label[data-css-demo-pro-input] {
+label[data-css-demo-tech-background-input], label[data-css-demo-tech-color-input], label[data-css-demo-tech-input] {
     border-radius: 6px;
     display: inline-block;
     box-sizing: border-box;
@@ -2590,12 +2601,12 @@ label[data-css-demo-pro-background-input], label[data-css-demo-pro-color-input],
     padding: initial;
     letter-spacing: initial
 }
-label[data-css-demo-pro-background-input] .fa-bars {
+label[data-css-demo-tech-background-input] .fa-bars {
     margin-right: 10px;
     font-size: 11px;
     opacity: .4
 }
-.css-demo-pro-visual-editor-color-open-dropdown {
+.css-demo-tech-visual-editor-color-open-dropdown {
     width: 19px;
     height: 19px;
     border-radius: 33px;
@@ -2603,7 +2614,7 @@ label[data-css-demo-pro-background-input] .fa-bars {
     overflow: hidden;
     display: inline-block
 }
-.css-demo-pro-background-preview:before, .css-demo-pro-visual-editor-color-open-dropdown:before {
+.css-demo-tech-background-preview:before, .css-demo-tech-visual-editor-color-open-dropdown:before {
     transform: scale(.99);
     width: 100%;
     height: 100%;
@@ -2618,7 +2629,7 @@ label[data-css-demo-pro-background-input] .fa-bars {
     left: 0;
     z-index: -1
 }
-label[data-css-demo-pro-background-input] input {
+label[data-css-demo-tech-background-input] input {
     margin: 0 !important;
     border: 0 !important;
     outline: 0 !important;
@@ -2635,28 +2646,28 @@ label[data-css-demo-pro-background-input] input {
     opacity: 1;
     padding: 6px 8px !important
 }
-[data-css-demo-pro-background-input] input {
+[data-css-demo-tech-background-input] input {
     max-width: 139px;
     text-overflow: ellipsis
 }
-label[data-css-demo-pro-visual-button] {
+label[data-css-demo-tech-visual-button] {
     display: inline-flex;
     cursor: default;
     margin: 0;
     padding: 4px 2px
 }
-label[data-css-demo-pro-visual-button]>div {
+label[data-css-demo-tech-visual-button]>div {
     display: inline-block;
     position: relative;
     margin-right: 3px
 }
-label[data-css-demo-pro-visual-button]:not([data-style=full]) button {
+label[data-css-demo-tech-visual-button]:not([data-style=full]) button {
     width: 100%;
     height: 100%;
     left: initial !important;
     right: initial !important
 }
-label[data-css-demo-pro-visual-button] button {
+label[data-css-demo-tech-visual-button] button {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -2678,14 +2689,14 @@ label[data-css-demo-pro-visual-button] button {
     position: initial;
     opacity: 1
 }
-section.explainer .card label[data-css-demo-pro-visual-button] button {
+section.explainer .card label[data-css-demo-tech-visual-button] button {
     width: 101%
 }
-label[data-css-demo-pro-visual-button]:not([data-style=full]) span.css-demo-pro-visual-button-span {
+label[data-css-demo-tech-visual-button]:not([data-style=full]) span.css-demo-tech-visual-button-span {
     width: 27px;
     height: 27px
 }
-label[data-css-demo-pro-visual-button] span.css-demo-pro-visual-button-span {
+label[data-css-demo-tech-visual-button] span.css-demo-tech-visual-button-span {
     background: 0 0;
     border-radius: 6px;
     font-size: 13.33px;
@@ -2696,21 +2707,21 @@ label[data-css-demo-pro-visual-button] span.css-demo-pro-visual-button-span {
     justify-content: center;
     color: #fff
 }
-label[data-css-demo-pro-background-input] input, label[data-css-demo-pro-background-input] span, label[data-css-demo-pro-visual-button] span {
+label[data-css-demo-tech-background-input] input, label[data-css-demo-tech-background-input] span, label[data-css-demo-tech-visual-button] span {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important
 }
-label[data-css-demo-pro-background-input] {
+label[data-css-demo-tech-background-input] {
     padding: 4px 7px 4px 6px;
     display: inline-flex;
     align-items: baseline;
     align-items: center
 }
-label[data-css-demo-pro-visual-button][data-css-demo-pro-edit-rule=custom-add-background-layer] {
+label[data-css-demo-tech-visual-button][data-css-demo-tech-edit-rule=custom-add-background-layer] {
     padding-left: 0;
     margin-left: 0 !important;
     margin-bottom: 5px
 }
-label[data-css-demo-pro-visual-button][data-style=full] button span {
+label[data-css-demo-tech-visual-button][data-style=full] button span {
     padding: 7px 10px
 }
 @keyframes placeHolderShimmer {
@@ -2775,7 +2786,7 @@ section.explainer .sub-explainer>p {
 section.explainer.export-elements .big-video {
     margin-bottom: 3em
 }
-.css-pro-color-eyedropper-popup-for-mobile {
+.csstech-color-eyedropper-popup-for-mobile {
     display: flex;
     align-items: center;
     min-width: 133px !important;
@@ -2784,13 +2795,13 @@ section.explainer.export-elements .big-video {
     margin-top: 15px !important;
     height: 47px
 }
-.css-pro-color-eyedropper-colorshow {
+.csstech-color-eyedropper-colorshow {
     width: 33px;
     height: 33px;
     border-radius: 40px;
     display: inline-block
 }
-.css-pro-color-eyedropper-colorname {
+.csstech-color-eyedropper-colorname {
     display: inline-block;
     margin: 0 0 0 10px !important;
     line-height: initial !important;
@@ -2798,7 +2809,7 @@ section.explainer.export-elements .big-video {
     font-size: 15px;
     font-weight: 500
 }
-.css-pro-color-eyedropper-popup-for-mobile {
+.csstech-color-eyedropper-popup-for-mobile {
     color: #fff;
     text-align: center;
     white-space: nowrap;
@@ -2813,7 +2824,7 @@ section.explainer.export-elements .big-video {
     border-radius: 32px !important;
     box-shadow: rgba(0, 0, 0, .1) 0 0 0 1px inset, rgba(255, 255, 255, .2) .5px .5px 0 0 inset, rgba(255, 255, 255, .1) 0 0 0 1px inset, rgba(0, 0, 0, .1) 0 2px 4px 0, rgba(255, 255, 255, .05) 0 0 0 1px inset !important
 }
-.card.color-eyedropper .css-pro-color-eyedropper-popup-for-mobile img.cursor {
+.card.color-eyedropper .csstech-color-eyedropper-popup-for-mobile img.cursor {
     position: absolute;
     width: 30px;
     top: -27px;
@@ -3197,7 +3208,7 @@ body.limited-to-100vh {
         width: 300px;
         background-image: linear-gradient(103deg, #b6d0f7 .9%, #eef4e1 21.12%, #e2c1f9 39.05%, #bfd1f9 52.2%, #fafcfe 62.83%, #bae4e2 71.67%, #8c6be3 89.14%)
     }
-    .css-demo-pro-gradient-controls-overlay {
+    .css-demo-tech-gradient-controls-overlay {
         width: 328.054px;
         height: 215.641px;
         transform: translate(-14px, -33px) rotate(13deg)
@@ -3284,14 +3295,14 @@ body.limited-to-100vh {
     section.explainer .sub-explainer>p {
         font-size: 26px
     }
-    section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds, section.explainer:not(.ruler-explainer) {
+    section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds, section.explainer:not(.ruler-explainer) {
         padding-left: 5%;
         padding-right: 5%
     }
-    section.explainer.become-a-css-pro {
+    section.explainer.become-a-csstech {
         margin-bottom: 0
     }
-    section.explainer.become-a-css-pro, section.explainer.next-level-backgrounds {
+    section.explainer.become-a-csstech, section.explainer.next-level-backgrounds {
         overflow: initial
     }
     section.explainer.next-level-backgrounds {
@@ -3427,7 +3438,7 @@ body.limited-to-100vh {
     footer .limited-width {
         padding: 0 2em
     }
-    .big-video, .card.color-eyedropper, .changes-images-wrapper, .hero-css-pro {
+    .big-video, .card.color-eyedropper, .changes-images-wrapper, .hero-csstech {
         width: 100%
     }
     .color-palette-demo li:nth-child(13), .color-palette-demo li:nth-child(14), .color-palette-demo li:nth-child(15), .color-palette-demo li:nth-child(16), .color-palette-demo li:nth-child(17), .color-palette-demo li:nth-child(18), .color-palette-demo li:nth-child(19), .color-palette-demo li:nth-child(20), .color-palette-demo li:nth-child(21), .pin-the-extension-helper {
@@ -3511,7 +3522,7 @@ body.limited-to-100vh {
     section.explainer:not(.ruler-explainer) {
         padding: 0 10%
     }
-    section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds {
+    section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds {
         padding: 5% 10%
     }
     .demo-button, .hide-on-mobile-and-tablet {
@@ -3544,17 +3555,17 @@ body.limited-to-100vh {
     }
 }
 @media screen and (min-width:1200px) {
-    section.explainer, section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds {
+    section.explainer, section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds {
         margin-top: 10em;
         margin-bottom: 10em
     }
-    section.explainer.become-a-css-pro, section.explainer.zero-margin-top {
+    section.explainer.become-a-csstech, section.explainer.zero-margin-top {
         margin-top: 0
     }
     section.explainer.zero-margin-bottom {
         margin-bottom: 0
     }
-    section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds {
+    section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds {
         padding: 10%
     }
     .hero .promo-img {
@@ -3572,7 +3583,7 @@ body.limited-to-100vh {
     .changes-demo.browser .cursor.after {
         margin-left: 50px
     }
-    .big-video, .hero-css-pro {
+    .big-video, .hero-csstech {
         width: 90%
     }
     section.explainer.next-level-backgrounds {
@@ -3589,7 +3600,7 @@ body.limited-to-100vh {
     section.explainer, section.explainer:not(.ruler-explainer) {
         padding: 0
     }
-    section.explainer.become-a-css-pro, section.explainer.changes, section.explainer.next-level-backgrounds {
+    section.explainer.become-a-csstech, section.explainer.changes, section.explainer.next-level-backgrounds {
         padding: 5% 10%
     }
     .cards-row, .cards-row.with-3-cards, .cards-row.with-cards-taking-half {
@@ -3612,7 +3623,7 @@ body.limited-to-100vh {
 .welcome h1 {
     margin: .6em 6%
 }
-.css-pro-modal-title {
+.csstech-modal-title {
     margin-left: 0
 }
 
@@ -3627,12 +3638,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar {
     width: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color:transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-    
     border-radius: 10px;
     height: 100px;
     background-image: -webkit-gradient(linear,
@@ -3643,9 +3653,7 @@ body::-webkit-scrollbar-thumb {
                                         color-stop(0.86, rgb(28,58,148)));
 }
 
-body {
-    background: #000;
-  }
+
   @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Quicksand:wght@300..700&family=Sedan+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Jaro:opsz@6..72&family=Quicksand:wght@300..700&family=Sedan+SC&display=swap');
@@ -3792,18 +3800,16 @@ body {
 /* This applies to the whole page */
 ::-webkit-scrollbar {
     width: 10px;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
+    border-radius: 5px;
     background: #f1f1f1; 
 }
  
 ::-webkit-scrollbar-thumb {
     background: #000; /* Black */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0000ff; /* Blue */
 }
 
 @keyframes shadow-drop-center {
@@ -3815,15 +3821,15 @@ body {
   }
 }
 
-/* Rainbow div */
+
 .rainbow {
     border-radius: 10px;
-    width: 80%; /* Adjust width as needed */
-    max-width: 500px; /* Set a maximum width */
-    height: 50vh; /* Adjust height as needed */
+    width: 80%;
+    max-width: 500px;
+    height: 50vh;
     position: relative;
     overflow: hidden;
-    margin: auto; /* Center the rainbow div horizontally */
+    margin: auto; 
 }
 
 .rainbow .moving-rainbow {
@@ -3834,7 +3840,7 @@ body {
     left: 0;
     background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
     background-size: 400%;
-    animation: rainbowAnimation 10s linear infinite, spin 20s linear infinite; /* Combine rainbow movement with spinning */
+    animation: rainbowAnimation 10s linear infinite;
 }
 
 @keyframes rainbowAnimation {
@@ -3848,7 +3854,7 @@ body {
 
 @keyframes spin {
     100% {
-        transform: rotate(360deg); /* Rotate the rainbow 360 degrees */
+        transform: rotate(360deg); 
     }
 }
 
@@ -3868,11 +3874,474 @@ body {
 .content {
     position: relative;
     z-index: 2; /* Ensure the content is above the border and rainbow */
-    width: 100000%;
-    height: 10000%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-size: 24px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    padding: 15px;
+    width: 100%;
+    max-width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.cover-photo {
+    position: relative;
+    background-image: url(https://www.shutterstock.com/image-photo/metro-railway-among-glass-skyscrapers-600nw-2185205475.jpg);
+    background-size: cover;
+    height: 180px;
+    border-radius: 5px 5px 0 0;
+}
+
+.profile {
+    position: absolute;
+    width: 120px;
+    bottom: -60px;
+    left: 15px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    background: #222;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.profile-name {
+    font-size: 20px;
+    margin: 25px 0 0 140px;
+    color: #fff;
+    text-align: left;
+}
+
+.position {
+    margin: 5px 0;
+    color: #7ce3ff;
+    font-weight: bold;
+}
+
+.about {
+    margin-top: 30px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.btn {
+    margin: 30px 15px;
+    background: #7ce3ff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #7ce3ff;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222;
+    transition: transform 0.3s, background-color 0.2s, color 0.2s;
+}
+
+.btn:last-of-type {
+    background: transparent;
+    border-color: #7ce3ff;
+    color: #7ce3ff;
+}
+
+.btn:hover {
+    background: #7ce3ff;
+    color: #222;
+    transform: translateY(-5px);
+}
+
+.icons {
+    width: 180px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    transition: color 0.2s, transform 0.3s;
+    color: #fff;
+}
+
+.icons i:hover {
+    color: #7ce3ff;
+    transform: rotate(15deg);
+}
+
+@media (max-width: 768px) {
+    .profile-name {
+        margin: 25px 0 0 50%;
+        transform: translateX(-50%);
+    }
+
+    .cover-photo {
+        height: 150px;
+    }
+
+    .profile {
+        width: 100px;
+        bottom: -50px;
+    }
+
+    .btn {
+        margin: 20px 10px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .profile-name {
+        margin: 20px 0 0 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn {
+        margin: 20px 5px;
+        padding: 6px 15px;
+    }
+
+    .icons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .icons i {
+        margin: 0 5px;
+    }
+}
+
+  *
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.shooting_stars{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* https://lh3.googleusercontent.com/ka_5IYJDRkXZnbptxq64LPuggGL5FM8gnpJlsuSiOQh4b39kMkiRbVfX8iK8bjMg5SLkdfoix09P60wyFjN2=w681-h614 *
+/*   background-color:black; */
+    background-size: cover;
+    animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1),0 0 0 1px rgba(255,255,255,0.1),0 0 1px rgba(255,255,255,0.1);
+    animation: animate 3s linear infinite;
+}
+.span::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(315deg) translateX(-500px);
+        opacity: 0;
+    }
+}
+.span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 1s;
+}
+.span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.span:nth-child(3){
+    top: 80;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.progress-container {
+    position: fixed;
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    
+  }
+  
+  .progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  }
+  
+  
+  .navbar{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  .navbar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar li{
+    height: 50px;
+  }
+  .navbar a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .navbar a:hover{
+    background-color: #f0f0f0;
+  }
+  .navbar li:first-child{
+    margin-right: auto;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 350px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+.snip1533 {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #fff; /* Change text color to white */
+    display: inline-block;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    margin: 35px 10px 10px;
+    max-width: 310px;
+    min-width: 250px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to bottom, #244655, #333333); /* Change background to dark gradient */
+    border-radius: 5px;
+    border-top: 5px solid #028AEF;
+  }
+  
+  .snip1533 *,
+  .snip1533 *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  
+  .snip1533 figcaption {
+    padding: 13% 10% 12%;
+  }
+  
+  .snip1533 figcaption:before {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #028AEF;
+    content: "\f10e";
+    font-family: 'FontAwesome';
+    font-size: 32px;
+    font-style: normal;
+    left: 50%;
+    line-height: 60px;
+    position: absolute;
+    top: -30px;
+    width: 60px;
+  }
+  
+  .snip1533 h3 {
+    color: #fff; /* Change heading color to white */
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 10px 0 5px;
+  }
+  
+  .snip1533 h4 {
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.5;
+  }
+  
+  .snip1533 blockquote {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+  

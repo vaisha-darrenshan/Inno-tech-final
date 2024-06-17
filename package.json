@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  },
+  "name": "inno-tech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8000",
+    "share": "ngrok http 8000"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
